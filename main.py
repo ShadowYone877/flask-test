@@ -8,3 +8,7 @@ def hello():
 @app.route("/CambiarContraseña")
 def CambiarContraseña():
     return render_template("CambiarContraseña.html")
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
