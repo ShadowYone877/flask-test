@@ -1,179 +1,66 @@
-:root{
-    --color-principal: hsl(64, 100%, 27%);
+@import url(login.css);
+:root {
+    --primary-color: #231f20;
+    --secondary-color: rgba(172, 22, 64, 0.918);
+    --gray_base-color: #e1e1e1;
+    --form_card-color1: #fbfbfb;
+    --text_box-color: #f9cbd0;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+    
 }
 
 body {
-    background-color: lightgrey; /* Fondo gris claro */
-    font-family: Arial, sans-serif;
-    color: black;
+    font-size: 100%;
+    line-height: 1.5;
+    background-color: var(--gray_base-color);
+    
+
 }
 
-
-a {
-    color: white;
-    text-decoration: none;
+h1,
+h2,
+h3,
+h4 {
+    margin: 1em 0 .5em;
+    line-height: 1.25
 }
 
-a:hover {
-    text-decoration: underline;
+h1 {
+    font-size: 2em
 }
 
-
-/* Estilos para la barra de navegación */
-.navbar {
-    display: flex;
-    justify-content: flex-end; /* Alinea los elementos al lado derecho */
-    background-image: url("4.png");
-    overflow: hidden;
+h2 {
+    font-size: 1.5em
 }
 
-.navbar a {
-    color: white;
-    text-align: center;
-    padding: 15px 30px;
-    text-decoration: none;
+h3 {
+    font-size: 1.2em
 }
 
-.navbar a:hover {
-    background-color: #b22222; /* Cambio de color al pasar el cursor */
-    color: black;
+ul,
+ol {
+    margin: 1em 0;
+    padding-left: 40px
 }
 
-/* Estilos para el botón de iniciar sesión */
-#loginButton {
-    margin-top: 20px; /* Ajusta la separación desde arriba */
-    text-align: left; /* Centra horizontalmente el botón */
+p,
+figure {
+    margin: 1em 0
 }
 
-#loginButton button {
-    padding: 10px 20px;
-    background-color: #8b0000; /* Fondo vino */
-    color: white;
-    border: none;
-    cursor: pointer;
+a img {
+    border: none
 }
 
-#loginButton button:hover {
-    background-color: #b22222; /* Cambio de color al pasar el cursor */
+sup,
+sub {
+    line-height: 0
 }
 
-
-#registerButton {
-    margin-top: 30px; /* Ajusta la separación desde arriba */
-    text-align: left; /* Centra horizontalmente el botón */
-}
-
-#registerButton button {
-    padding: 10px 20px;
-    background-color: #8b0000; /* Fondo oscuro */
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#registerButton button:hover {
-    background-color: #b22222; /* Cambio de color al pasar el cursor */
-}
-
-
-/* Estilos para el contenedor de inicio de sesión */
-#loginContainer {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url('4.png');
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-    z-index: 9999;
-    color: white;
-}
-
-/* Estilos para el contenedor de registro */
-#registerContainer {
-     display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url('4.png');
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-    z-index: 9999;
-    color: white;
-}
-
-.content > p, .content > div {
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
-    margin: 25px 0;
-    padding: 25px;
-    background-color: #333;
-}
-.content > p table td, .content > div table td {
-    padding: 5px;
-}
-.content > p table td:first-child, .content > div table td:first-child {
-    font-weight: bold;
-    color: white;
-    padding-right: 15px;
-}
-.content > div p {
-    padding: 5px;
-    margin: 0 0 10px 0;
-}
-#content {
-   
-    background-color: #8b0000; /* Fondo vino */
-    color: white;
-    border-radius: 10px;
-}
-
-#cont {
-   
-    background-color: #8b0000; /* Fondo vino */
-    color: white;
-    border-radius: 10px;
-}
-
-.container {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 150;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #8b0000;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
