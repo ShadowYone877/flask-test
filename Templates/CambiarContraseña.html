@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Cambiar contraseña</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="1.jpg"/> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='datosuestilo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CambiarContraseñaestilo.css') }}">
+</head>
+<body>
+    <div class="Cambiar_contraseña" id="contraseñas">
+        <div id="Cerrar"><a href="javascript:cerrar()"><img src="Imagenes/cerca.png"></a></div>
+        <p>Cambiar contraseña</p>
+        <br>
+        <form>
+            <label for="antigua contraseña">Antigua contraseña</label>
+            <br>
+            <br>
+            <input type="password" id="antigua contraseña" name="antigua contraseña">
+            <br>
+            <br>
+            <label for="nueva contraseña">Nueva contraseña</label>
+            <br>
+            <br>
+            <input type="password" id="nueva contraseña" name="nueva contraseña">
+            <br>
+            <br>
+            <label for="Confirmar contraseña">Confirmar contraseña</label>
+            <br>
+            <br>
+            <input type="password" id="Confirmar contraseña" name="antigua contraseña">
+        </form>
+            <br>
+            <br>
+            <a href="CambiarContraseña.html" class="Botón_Cambiar">Cambiar</a>
+            <br>
+            <br>
+            <a href="CambiarContraseña.html" class="Botón_Guardar">Guardar</a>
+    </div>
+    <section id="Ventana cambiar contraseña">
+        <a href="javascript:abrir()">Abrir ventana</a>
+
+    </section>
+
+
+<script>
+    function abrir(){
+        document.getElementById("contraseñas").style.display="block";
+    }
+
+    function cerrar(){
+        document.getElementById("contraseñas").style.display="none";
+    }
+</script>    
+    
+</body>
+</html>

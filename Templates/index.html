@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="1.jpg"/> 
+    <link rel="stylesheet" href="base.css"> 
+
+</head>
+
+
+              <nav class="navbar"> 
+              <a href="index.html" style="color:white;" ><i class="fas fa-home"></i>INICIO</a>
+              <a href="#" style="color:white;" ><i class="fas fa-bullhorn"></i>Comité</a>
+              <a href="#" style="color:white;" ><i class="fas fa-user-alt"></i>Militantes</a>
+              <a href="#" style="color:white;" ><i class="fas fa-phone"></i>Contacto</a>
+              </nav>
+
+</div>
+
+              <h1><strong><em><u>Mili</u>tancia</em></strong></h1>
+
+
+              <div id="loginButton">
+                <button onclick="toggleLogin()">Iniciar Sesión</button>
+            </div>
+
+            <div id="registerButton">
+            <button onclick="toggleRegister()">Registrarse</button>
+            </div>
+
+
+<center><div class="container">
+<img src="5.jpg" alt="Avatar" class="image">
+<div class="overlay">
+  <div class="text">Hola de nuevo</div>
+</div>
+</div></center>
+
+
+ 
+
+
+<div id="loginContainer">
+           
+          <center> <h1 style="color: white;">  ¡Bienvenidos¡</h1>
+           <h2>  Inicio Militantes <i class="fas fa-portrait" ></i></h2></center>
+
+
+  <form action="procesar_login.php" method="post">
+
+      <label for="usuario"> <i class="fas fa-user"></i>
+      </label> 
+
+      <input type="text" name="usuario" placeholder="Usuario" required><br><br>
+
+      <label for="contrasena"><i class="fas fa-lock"></i></label> 
+
+      <input type="password" name="contrasena" placeholder="Password" required><br><br>
+
+      <input style="background-image: url('4.png'); color:black; text-align: center; cursor: pointer;" type="submit" value="Acceder"> <br><br>
+
+  </form>
+
+  </div>
+
+
+  <script>
+      // Función para mostrar u ocultar el contenedor de inicio de sesión
+      function toggleLogin() {
+          var container = document.getElementById("loginContainer");
+          if (container.style.display === "none") {
+              container.style.display = "block";
+          } else {
+              container.style.display = "none";
+          }
+      }
+  </script>
+
+
+
+
+
+           
+
+ 
+
+<div id="registerContainer">
+    <h2>  Registro de Usuarios  <i class="fas fa-portrait" ></i></h2>
+
+    <form action="procesar_registro.php" method="post">
+
+        <label for="usuario" > <i class="fas fa-user-circle"></i>
+            
+        </label>
+        <input type="text" name="usuario"  placeholder="Usuario" required><br>  <br>
+
+        <label for="contrasena" > <i class="fas fa-lock"></i>
+            
+        </label>
+
+        <input type="password" name="contrasena"  placeholder="Password" required><br>  <br>
+
+
+        <label for="rol" > <i class="fas fa-list"></i>
+            
+        </label>
+        <select name="rol"  placeholder="Rol">
+            <option value="admin" >Administrador</option>
+            <option value="usuario" >Usuario</option>
+        </select><br><br>
+
+        <input type="submit" value="Registrar" style="background-image: url('4.png'); color:black; text-align: center; cursor: pointer;" > 
+
+         <input type="reset" value="Borrar" style="background-image: url('4.png'); color:black; text-align: center; cursor: pointer;">
+    </form><br><br>
+
+
+</div>
+<script>
+       // Función para mostrar u ocultar el contenedor de inicio de sesión
+       function toggleRegister() {
+           var container = document.getElementById("registerContainer");
+           if (container.style.display === "none") {
+               container.style.display = "block";
+           } else {
+               container.style.display = "none";
+           }
+       }
+   </script>
+
+</body>
+</html>
