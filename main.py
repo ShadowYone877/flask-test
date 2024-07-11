@@ -15,6 +15,7 @@ def login():
 @app.route("/inicio")
 def inicio():
     return render_template("inicio.html")
+    
 @app.route("/Registro")
 def Registro():
     return render_template("Registro.html")
