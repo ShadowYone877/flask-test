@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="1.jpg"/> 
     <link rel="stylesheet" href="{{ url_for('static', filename='datosuestilo.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome6/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome6/css/brands.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome6/css/solid.css') }}">
 </head>
 <body>
     <header>
@@ -29,7 +32,7 @@
     </header>
     <main>
         <section class="Mostrar_Datos_Usuario" id="Datos">
-            <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarDatosUsuario()"><img src="Imagenes/cerca.png"></a></div>
+            <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarDatosUsuario()"><i class="fa-solid fa-xmark"></i></a></div>
             <form>
                 <label for="fecha de registro">Fecha de registro</label>
                 <input type="text" id="fecha de registro" name="fecha de registro" placeholder="DD/MM/AA" />
@@ -48,7 +51,7 @@
             </form>
         </section>
         <section class="Cambiar_contraseña" id="contraseñas">
-                <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarContraseña()"><img src="Imagenes/cerca.png"></a></div>
+                <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarContraseña()"><i class="fa-solid fa-xmark"></i></a></div>
                 <form>
                     <label for="antigua contraseña">Antigua contraseña</label>
                     <br>
