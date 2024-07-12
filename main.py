@@ -20,3 +20,7 @@ def inicio():
 @app.route("/Registro")
 def Registro():
     return render_template("Registro.html")
+
+@app.route("/evento")
+def evento():
+    return render_template("evento.html")
