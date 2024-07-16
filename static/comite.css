@@ -1,0 +1,187 @@
+
+  .content { 
+	min-height: 80px;
+	background: var(--primary-color);
+  }
+  .menu {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-logo {
+  height: 15px;
+}
+.logo {
+  font-size: 50px;
+  color: #ffff;
+  text-transform: uppercase;
+}
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #dedede;
+  display: block;
+  font-weight: bold;
+}
+.menu .navbar ul li a:hover {
+  color: #ffff;
+}
+#menu {
+  display: none;
+}
+.menu-icono {
+  width: 25px;
+}
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parra p {
+	color: #ffff;
+
+}
+  /*termina header*/
+
+.contenedor_vista{
+    position: relative;
+    left: 500px;
+    top: 60px;
+  }
+  
+.contenedor_vista{ 
+    border-radius:35px;
+    width: 300%; /*ancho del elemento*/
+    height: 500px;
+    max-width: 500px;
+    background: rgba(172, 22, 64, 0.918);
+    padding: 15px; /*es el espacio que existe entre el texto y recuadro*/
+    align-items: center; 
+  }
+
+.word{
+  text-align: center;
+  color: #e1e1e1;
+}
+
+input[type=text] {  
+  color:black;
+  width: 42%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;
+  position: relative; left: 10px; top: 20px; /*posicion static*/
+}
+
+input[type=file]{
+  width: 40%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;  
+  position: absolute; left: 270px; top: 65px;/* posicion que no reserva ningun espacio*/
+}
+
+input.direccion[type=text]{
+}
+
+input[type=tex]{
+  width: 40%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;  
+  position: absolute; left: 270px; top: 116px;
+  margin-top: 15px;
+}
+
+input[type=te]{
+  width: 40%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;  
+  position: absolute; left: 22px; top: 256px;
+  margin-top: 15px;
+}
+
+input[type=date]{
+  width: 40%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;  
+  position: absolute; left: 22px; top: 186px;
+  margin-top: 15px;
+}
+
+input[type=time]{
+  width: 40%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;  
+  margin-top: 15px;
+  position: absolute; left: 270px; top: 186px;
+}
+
+input[type=number]{
+  width: 40%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;  
+  margin-top: 15px;
+  position: absolute; left: 270px; top: 256px;
+}
+
+input[type=button]{
+  width: 23%;
+  height: 35px;
+  border-radius:25px;  
+  background-color: rgba(172, 22, 64, 0.918);
+  position: absolute; left: 80px; top: 406px;
+  z-index: 0;
+}
+
+.fas.fa-chevron-right{
+  color:#e1e1e1;
+  position: absolute; left: 411px; top: 415px;
+  z-index: 1;
+}
+
+input[type=butt]{
+  text-align: center;
+  width: 23%;
+  height: 35px;
+  border-radius:25px;  
+  background-color: rgba(172, 22, 64, 0.918);
+  position: absolute; left: 318px; top: 406px;
+  z-index: 0;
+}
+
+.fas.fa-chevron-left{
+  color:#e1e1e1;
+  position: absolute; left: 90px; top: 415px;
+  z-index: 1;
+}

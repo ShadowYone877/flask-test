@@ -1,0 +1,82 @@
+{% extends "base_template.html" %}
+{% block title %}COMITE{% endblock %}
+{% block header %}
+<div class="content">
+    <div class="menu container">
+             <input type="checkbox" id="menu"/>
+             <div class="parra">
+             <p>Nombre del militante</p>
+            </div>
+                    <label for="menu">
+                             </label>
+                                <nav class="navbar"><!-- nav permiten a los usuarios desplazarse o acceder a diferentes partes-->
+                                     <ul>
+                                      
+                <li><a href="index.html">Datos personales</a></li>
+                <li><a href="DatosUsuario.html">Datos del usuario</a></li>
+                <li><a href="comite.html" target="_blank">Comite</a></li>
+                <li><a href="CerrarSesion.html">Cerrar sesion</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                                    </ul>
+                              </nav>
+     </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<main>
+    <div class="contenedor_vista">
+        <div class="word">
+            <h2>Comité</h2>
+        </div>
+        <section com="comite" class="contenedor_comite">
+            <div><input type="text" name="Nombre" placeholder="Comité"> </div>
+        </section>
+        <br>
+        <br>
+        <section ip="persona" class="contenedor_Ip">
+            <div><input type="file" name="Ip" placeholder="Identificacion personal"> </div>
+        </section>
+
+        <section di="Direccion" class="direccion"><!--input 2 izquierdo-->
+            <div><input type="text" name="Direccion" placeholder="Dirección principal"> </div>
+        </section>
+        <br>
+        <br>
+        <section dic="Alterna" class="Alterna"><!--input que debe ser 2 derecho-->
+            <div><input type="tex" name="Alterna" placeholder="Dirección alterna" /> </div>
+        </section>
+
+
+        <section reunion="Dia" class="reunion">
+            <label>Dia de la reunion</label>
+            <div><input type="date" name="Di" placeholder="Día de la reunión"></div>
+        </section>
+
+        <section hora="ho" class="reu">
+            <div><input type="time" name="time" id="time" value="Hora de reunión" /></div>
+        </section>
+        <br>
+        <br>
+
+        <section c="ca" class="howmuch">
+            <div><input type="te" name="n" id="time" placeholder="Cada cuanto se reúne" /></div>
+        </section>
+
+        <section integrantes="num" class="members">
+            <div><input type="number" name="age" id="age" min="1" max="100" step="1"
+                    placeholder="Número de integrantes" /></div>
+        </section>
+
+        <section regresar="b" class="regresar">
+            <div><i class="fas fa-chevron-left"></i><input type="button" onclick="history.back()" name="Atrás"
+                    value="Atrás"></div>
+        </section>
+
+
+        <section sig="siguiente" class="next">
+            <div><i class="fas fa-chevron-right"></i><input type="butt" value="Siguiente" /></div>
+
+    </div>
+</main>
+{% endblock %}
