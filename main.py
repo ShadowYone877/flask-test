@@ -12,9 +12,15 @@ def CambiarContraseña():
 @app.route("/login")
 def login():
     return render_template("login.html")
+
 @app.route("/inicio")
 def inicio():
     return render_template("inicio.html")
+    
 @app.route("/Registro")
 def Registro():
     return render_template("Registro.html")
+
+@app.route("/evento")
+def evento():
+    return render_template("evento.html")

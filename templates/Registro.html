@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='Registro.css') }}">    
     <title>Document</title>
-</head>
-<body>
-    <h1>Registros</h1>
-</body>
+
+    <div class="content">
+      <div class="menu container">
+        <a href="index.html" class="logo"
+          ><img src="images/logo2.png" alt=""
+        /></a>
+        <input type="checkbox" id="menu" />
+        <div class="parra">
+          <p>Nombre del militante</p>
+        </div>
+        <label for="menu"> </label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Datos personales</a></li>
+            <li><a href="DatosUsuario.html">Datos del usuario</a></li>
+            <li><a href="CerrarSesion.html">Cerrar sesion</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </head>
+  <body>
+    <header class="header">
+      <div class="cuadrado">
+        <p>Registro de Militante</p>
+        <div class="pre">
+      <div class="municipio">  <textarea name="Municipio" id="">Municipio</textarea></div>
+        <textarea name="Distrito" id="">Distrito</textarea>
+        <textarea name="Nombre" id="">Nombre</textarea>
+
+        <input id="number" type="number" value="" />
+        <textarea name="Genero" id="">Genero</textarea>
+        <tetarea name="Dirrecion" id="">Dirrecion</tetarea>
+        <textarea name="Comite" id="">Comite</textarea>
+        <time>20:00</time>
+        <textarea name="telefono" id="">Telefono 1</textarea>
+        <textarea name="telefono2" id="">Telefono 2</textarea>
+        <textarea name="lugar" id="">lugar de la reunion</textarea>
+</div>
+        <div class="tres">
+
+          <select name="" id="Estados">
+            <option selected disabled>Seleciona un elemento</option>
+            <option>Aguascalientes</option>
+            <option>Baja California</option>
+            <option>Baja California Sur</option>
+            <option>Campeche</option>
+            <option>Chiapas</option>
+            <option>Chihuahua</option>
+            <option>Ciudad de México</option>
+            <option>Colima</option>
+            <option>Durango</option>
+            <option>Estado de México</option>
+            <option>Guanajuato</option>
+            <option>Guerrero</option>
+            <option>Hidalgo</option>
+            <option>Jalisco</option>
+            <option>Michoacán</option>
+            <option>Morelos</option>
+            <option>Nayarit</option>
+            <option>Nuevo León</option>
+            <option>Oaxaca</option>
+            <option>Puebla</option>
+            <option>Querétaro</option>
+            <option>Quintana Roo</option>
+            <option>San Luis Potosí</option>
+            <option>Sinaloa</option>
+            <option>Sonora</option>
+            <option>Tabasco</option>
+            <option>Tamaulipas</option>
+            <option>Tlaxcala</option>
+            <option>Veracruz</option>
+            <option>Yucatán</option>
+            <option>Zacatecas</option>
+          </select>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
