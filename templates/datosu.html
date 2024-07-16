@@ -1,23 +1,8 @@
 {% extends "base_template.html" %}
 {% block header %}
-<nav>
-    <input type="checkbox" id="Mostrar">
-    <div class="Logotipo">
-        <i class="fa-solid fa-user"></i>Nombre del Militante
-    </div>
-    <ul class="Lista">
-        <li><a href="#">Datos Personales</a></li>
-        <li><a href="#" onclick="mostrarDatosUsuario()">Datos del Usuario</a></li>
-        <li><a href="#" onclick="mostrarEvento()">Evento</a></li>
-        <li><a herf="#">Cerrar Sesión</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
-    <label for="Mostrar" class="Barra_íconos">
-        <div class="Línea"></div>
-        <div class="Línea"></div>
-        <div class="Línea"></div>
-    </label>
-</nav>
+<header>
+    {% include "header.html" %}
+</header>
 {% endblock %}
 {% block content %}
 <main>
