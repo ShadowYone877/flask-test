@@ -1,4 +1,5 @@
 @import url(login.css);
+@import url(datosuestilo.css);
 :root {
     --primary-color: #231f20;
     --secondary-color: #ac1640ea;
