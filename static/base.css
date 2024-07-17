@@ -1,10 +1,13 @@
 @import url(login.css);
 @import url(datosuestilo.css);
 @import url(comite.css);
+@import url(CambiarContraseñaestilo.css);
+@import url(eventoestilo.css);
+@import url(header.css);
 @import url(inicio.css);
 :root {
     --primary-color: #231f20;
-    --secondary-color: #ac1640ea;
+    --secondary-color: #9a2020;
     --gray_base-color: #e1e1e1;
     --form_card-color1: #fbfbfb;
     --text_box-color: #f9cbd0;
