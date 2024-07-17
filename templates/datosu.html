@@ -1,210 +1,190 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Datos del usuario</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="shortcut icon" href="1.jpg"/> 
-    <link rel="stylesheet" href="{{ url_for('static', filename='datosuestilo.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome6/css/fontawesome.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome6/css/brands.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome6/css/solid.css') }}">
-</head>
-<body>
-    <header>
-                <nav>
-                    <input type="checkbox" id="Mostrar">
-                <div class="Logotipo">
-                    Nombre del Militante
-                </div>
-                <ul class="Lista">
-                    <li><a href="#">Datos Personales</a></li>
-                    <li><a href="#" onclick="mostrarDatosUsuario()">Datos del Usuario</a></li>
-                    <li><a href="#" onclick="mostrarEvento()">Evento</a></li>                   
-                    <li><a herf="#">Cerrar Sesión</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-                <label for="Mostrar" class="Barra_íconos">
-                    <div class="Línea"></div>
-                    <div class="Línea"></div>
-                    <div class="Línea"></div>
-                </label>
-                </nav>
-    </header>
-    <main>
-        <section class="Mostrar_Datos_Usuario" id="Datos">
-            <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarDatosUsuario()"><i class="fa-solid fa-xmark"></i></a></div>
-            <form>
-                <label for="fecha de registro">Fecha de registro</label>
-                <input type="date" id="fecha de registro" name="fecha de registro" placeholder="DD/MM/AA" />
-                <br>
-                <br>
-                <label for="comité asignado">Comité asignado</label>
-                <input type="text" id="comité asignado" name="comité asignado" placeholder="Ingrese su comité" />
-                <br>
-                <br>
-                <label for="coordinador de comité">Coordinador de comité</label>
-                <input type="text" id="coordinador de comité" name="coordinador de comité" placeholder="Comité que Coordina" />
-                <br>
-                <br>
-                <a href="#Cambiar contraseña" onclick="mostrarContraseña()"><span style="color: white;">Cambiar contraseña</span></a>
-                <a href="index.html" class="Botón_regresar">Regresar</a>
-            </form>
-        </section>
-        <section class="Cambiar_contraseña" id="contraseñas">
-                <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarContraseña()"><i class="fa-solid fa-xmark"></i></a></div>
+{% extends "base_template.html" %}
+{% block header %}
+<header>
+    {% include "header.html" %}
+</header>
+{% endblock %}
+{% block content %}
+<main>
+    <section class="Mostrar_Datos_Usuario" id="Datos">
+        <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarDatosUsuario()"><i
+                    class="fa-solid fa-xmark"></i></a></div>
+        <form>
+            <label for="fecha de registro">Fecha de registro</label>
+            <input type="date" id="fecha de registro" name="fecha de registro" placeholder="DD/MM/AA" />
+            <br>
+            <br>
+            <label for="comité asignado">Comité asignado</label>
+            <input type="text" id="comité asignado" name="comité asignado" placeholder="Ingrese su comité" />
+            <br>
+            <br>
+            <label for="coordinador de comité">Coordinador de comité</label>
+            <input type="text" id="coordinador de comité" name="coordinador de comité"
+                placeholder="Comité que Coordina" />
+            <br>
+            <br>
+            <a href="#Cambiar contraseña" onclick="mostrarContraseña()"><span style="color: white;">Cambiar
+                    contraseña</span></a>
+            <a href="index.html" class="Botón_regresar">Regresar</a>
+        </form>
+    </section>
+    <section class="Cambiar_contraseña" id="contraseñas">
+        <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarContraseña()"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <form>
+            <label for="antigua contraseña">Antigua contraseña</label>
+            <br>
+            <br>
+            <input type="password" id="antigua contraseña" name="antigua contraseña">
+            <br>
+            <br>
+            <label for="nueva contraseña">Nueva contraseña</label>
+            <br>
+            <br>
+            <input type="password" id="nueva contraseña" name="nueva contraseña">
+            <br>
+            <br>
+            <label for="Confirmar contraseña">Confirmar contraseña</label>
+            <br>
+            <br>
+            <input type="password" id="Confirmar contraseña" name="antigua contraseña">
+            <br>
+            <br>
+            <a href="datosu.html" class="Botón_Cambiar">Cambiar</a>
+            <br>
+            <br>
+            <a href="datosu.html" class="Botón_Guardar">Guardar</a>
+        </form>
+    </section>
+    <section class="Evento" id="formulario">
+        <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarEvento()"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <form>
+            <label for="fecha inicial del evento">Fecha inicial del evento</label>
+            <input type="date" id="fecha inicial" name="fecha inicial">
+            <label for="fecha final del evento">Fecha final del evento</label>
+            <input type="date" id="fecha final" name="fecha final">
+            <label for="porcentaje realizado">Porcentaje realizado</label>
+            <div class="Contenedor">
+                <select class="Menu_desplegable">
+                    <option disabled selected>Seleccione el porcentaje</option>
+                    <option>25%</option>
+                    <option>50%</option>
+                    <option>75%</option>
+                    <option>100%</option>
+                </select>
+            </div>
+            <br>
+            <div class="Utilidades">
                 <form>
-                    <label for="antigua contraseña">Antigua contraseña</label>
-                    <br>
-                    <br>
-                    <input type="password" id="antigua contraseña" name="antigua contraseña">
-                    <br>
-                    <br>
-                    <label for="nueva contraseña">Nueva contraseña</label>
-                    <br>
-                    <br>
-                    <input type="password" id="nueva contraseña" name="nueva contraseña">
-                    <br>
-                    <br>
-                    <label for="Confirmar contraseña">Confirmar contraseña</label>
-                    <br>
-                    <br>
-                    <input type="password" id="Confirmar contraseña" name="antigua contraseña">
-                    <br>
-                    <br>
-                    <a href="datosu.html" class="Botón_Cambiar">Cambiar</a>
-                    <br>
-                    <br>
-                    <a href="datosu.html" class="Botón_Guardar">Guardar</a>
-                </form>    
-        </section>
-        <section class="Evento" id="formulario">
-            <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarEvento()"><i class="fa-solid fa-xmark"></i></a></div>
+                    <label>¿Qué materiales se utilizaron?</label><br>
+                    <input type="checkbox">Lonas<br>
+                    <label>¿Cuántas lonas se utilizaron?</label><br>
+                    <input type="number" id="cantidad"><br>
+                    <input type="checkbox">Volantes<br>
+                    <label>¿Cuántos volantes se utilizaron?</label><br>
+                    <input type="number" id="cantidad volantes"><br>
+                    <label>¿Se realizaron reuniones de comite?</label><br>
+                    <input type="checkbox">Si<br>
+                    <label>¿Cuántas reuniones se llevaron acabo?</label><br>
+                    <input type="number" id="cantidad reuniones"><br>
+                    <input type="checkbox">No<br>
+                </form>
+            </div>
+            <br>
+            <a href="#Ubicación" onclick="mostrarUbicacion()"><span style="color: white;">Ubicación</span></a>
+            <a href="index.html" class="Botón_regresar">Regresar</a>
             <form>
-                <label for="fecha inicial del evento">Fecha inicial del evento</label>
-                <input type="date" id="fecha inicial" name="fecha inicial">
-                <label for="fecha final del evento">Fecha final del evento</label>
-                <input type="date" id="fecha final" name="fecha final">
-                <label for="porcentaje realizado">Porcentaje realizado</label>
-                <div class="Contenedor">
-                    <select class="Menu_desplegable">
-                        <option disabled selected>Seleccione el porcentaje</option>
-                        <option>25%</option>
-                        <option>50%</option>
-                        <option>75%</option>
-                        <option>100%</option>
-                    </select>
-                </div>
-                <br>
-                <div class="Utilidades">
-                    <form>
-                        <label>¿Qué materiales se utilizaron?</label><br>
-                        <input type="checkbox">Lonas<br>
-                        <label>¿Cuántas lonas se utilizaron?</label><br>
-                        <input type="number" id="cantidad"><br>
-                        <input type="checkbox">Volantes<br>
-                        <label>¿Cuántos volantes se utilizaron?</label><br>
-                        <input type="number" id="cantidad volantes"><br>
-                        <label>¿Se realizaron reuniones de comite?</label><br>
-                        <input type="checkbox">Si<br>
-                        <label>¿Cuántas reuniones se llevaron acabo?</label><br>
-                        <input type="number" id="cantidad reuniones"><br>
-                        <input type="checkbox">No<br>
-                    </form>
-                </div>
-                <br>
-                <a href="#Ubicación" onclick="mostrarUbicacion()"><span style="color: white;">Ubicación</span></a>
-                <a href="index.html" class="Botón_regresar">Regresar</a>
-            <form>
-        </section>
-        <section class="Ubicacion_Evento" id="lugar">
-            <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarUbicacion()"><i class="fa-solid fa-xmark"></i></a></div>
-            <form>
-                <label for="codigo postal">Código Postal</label>
-                <input type="number" id="codigo postal" name="codigo postal">
-                <label for="estado">Estado</label>
-                <div class="Caja">
-                    <select class="Estado_desplegable">
-                        <option disabled selected>Seleccione su estado</option>
-                        <option>Aguascalientes</option>
-                        <option>Baja California</option>
-                        <option>Baja California Sur</option>
-                        <option>Campeche</option>
-                        <option>Chiapas</option>
-                        <option>Chihuahua</option>
-                        <option>Ciudad de México</option>
-                        <option>Coahuila</option>
-                        <option>Colima</option>
-                        <option>Durango</option>
-                        <option>Estado de México</option>
-                        <option>Guanajuato</option>
-                        <option>Guerrero</option>
-                        <option>Hidalgo</option>
-                        <option>Jalisco</option>
-                        <option>Michoacán</option>
-                        <option>Morelos</option>
-                        <option>Nayarit</option>
-                        <option>Nuevo León</option>
-                        <option>Oaxaca</option>
-                        <option>Puebla</option>
-                        <option>Querétaro</option>
-                        <option>Quintana Roo</option>
-                        <option>San Luis Potosí</option>
-                        <option>Sinaloa</option>
-                        <option>Sonora</option>
-                        <option>Tabasco</option>
-                        <option>Tamaulipas</option>
-                        <option>Tlaxcala</option>
-                        <option>Veracruz</option>
-                        <option>Yucatán</option>
-                        <option>Zacatecas</option>
-                    </select>
-                </div>
-                <label for="colonia">Colonia</label>
-                <input type="text" id="Ingresar colonia" name="Ingresar colonia" placeholder="Ingrese su colonia">
-                <label for="municipio o alcaldía">Municipio o Alcaldía</label>
-                <input type="text" id="municipio o alcaldía" name="municipio o alcaldía" placeholder="Ingrese su Municipio o Alcaldía">
-                <label for="calle">Calle</label>
-                <input type="text" id="Ingresar calle" name="Ingresar calle" placeholder="Ingrese su calle">
-                <label for="exterior">No. Ext</label>
-                <input type="number" id="num exterior" name="num exterior" placeholder="num exterior">
-                <label for="interno">No. Int</label>
-                <input type="number" id="num interno" name="num interno" placeholder="num interno"> 
-            </form>
+    </section>
+    <section class="Ubicacion_Evento" id="lugar">
+        <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarUbicacion()"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <form>
+            <label for="codigo postal">Código Postal</label>
+            <input type="number" id="codigo postal" name="codigo postal">
+            <label for="estado">Estado</label>
+            <div class="Caja">
+                <select class="Estado_desplegable">
+                    <option disabled selected>Seleccione su estado</option>
+                    <option>Aguascalientes</option>
+                    <option>Baja California</option>
+                    <option>Baja California Sur</option>
+                    <option>Campeche</option>
+                    <option>Chiapas</option>
+                    <option>Chihuahua</option>
+                    <option>Ciudad de México</option>
+                    <option>Coahuila</option>
+                    <option>Colima</option>
+                    <option>Durango</option>
+                    <option>Estado de México</option>
+                    <option>Guanajuato</option>
+                    <option>Guerrero</option>
+                    <option>Hidalgo</option>
+                    <option>Jalisco</option>
+                    <option>Michoacán</option>
+                    <option>Morelos</option>
+                    <option>Nayarit</option>
+                    <option>Nuevo León</option>
+                    <option>Oaxaca</option>
+                    <option>Puebla</option>
+                    <option>Querétaro</option>
+                    <option>Quintana Roo</option>
+                    <option>San Luis Potosí</option>
+                    <option>Sinaloa</option>
+                    <option>Sonora</option>
+                    <option>Tabasco</option>
+                    <option>Tamaulipas</option>
+                    <option>Tlaxcala</option>
+                    <option>Veracruz</option>
+                    <option>Yucatán</option>
+                    <option>Zacatecas</option>
+                </select>
+            </div>
+            <label for="colonia">Colonia</label>
+            <input type="text" id="Ingresar colonia" name="Ingresar colonia" placeholder="Ingrese su colonia">
+            <label for="municipio o alcaldía">Municipio o Alcaldía</label>
+            <input type="text" id="municipio o alcaldía" name="municipio o alcaldía"
+                placeholder="Ingrese su Municipio o Alcaldía">
+            <label for="calle">Calle</label>
+            <input type="text" id="Ingresar calle" name="Ingresar calle" placeholder="Ingrese su calle">
+            <label for="exterior">No. Ext</label>
+            <input type="number" id="num exterior" name="num exterior" placeholder="num exterior">
+            <label for="interno">No. Int</label>
+            <input type="number" id="num interno" name="num interno" placeholder="num interno">
+        </form>
         <script>
-            function mostrarDatosUsuario(){
-                document.getElementById("Datos").style.display="block";
+            function mostrarDatosUsuario() {
+                document.getElementById("Datos").style.display = "block";
             }
-            function cerrarDatosUsuario(){
-                document.getElementById("Datos").style.display="none";
+            function cerrarDatosUsuario() {
+                document.getElementById("Datos").style.display = "none";
             }
         </script>
         <script>
-            function mostrarContraseña(){
-                document.getElementById("contraseñas").style.display="block";
+            function mostrarContraseña() {
+                document.getElementById("contraseñas").style.display = "block";
             }
-        
-            function cerrarContraseña(){
-                document.getElementById("contraseñas").style.display="none";
-            }
-        </script>
-        <script>
-            function mostrarEvento(){
-                document.getElementById("formulario").style.display="block";
-            }
-            function cerrarEvento(){
-                document.getElementById("formulario").style.display="none";
+
+            function cerrarContraseña() {
+                document.getElementById("contraseñas").style.display = "none";
             }
         </script>
         <script>
-            function mostrarUbicacion(){
-                document.getElementById("lugar").style.display="block";
+            function mostrarEvento() {
+                document.getElementById("formulario").style.display = "block";
             }
-                    
-            function cerrarUbicacion(){
-                document.getElementById("lugar").style.display="none";
+            function cerrarEvento() {
+                document.getElementById("formulario").style.display = "none";
             }
-        </script>   
-    </main>
-</body>
-</html>
+        </script>
+        <script>
+            function mostrarUbicacion() {
+                document.getElementById("lugar").style.display = "block";
+            }
+
+            function cerrarUbicacion() {
+                document.getElementById("lugar").style.display = "none";
+            }
+        </script>
+</main>
+{% endblock %}

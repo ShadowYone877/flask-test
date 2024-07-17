@@ -24,3 +24,7 @@ def Registro():
 @app.route("/evento")
 def evento():
     return render_template("evento.html")
+
+@app.route("/comite")
+def comite():
+    return render_template("comite.html")

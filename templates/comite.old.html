@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='comite.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-https://fontawesome.com/icons/chevron-left?f=classic&s=solid" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-https://fontawesome.com/icons/chevron-left?f=classic&s=solid" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-https://fontawesome.com/icons/chevron-right?f=classic&s=solid" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <div class="content">
+            <div class="menu container">
+                <input type="checkbox" id="menu" />
+                <div class="parra">
+                    <p>Nombre del militante</p>
+                </div>
+                <label for="menu">
+                </label>
+                <nav><!-- representa una sección de una página cuyo propósito es proporcionar enlaces de navegación-->
+                    <ul>
+                        <li><a href="index.html">Datos personales</a></li>
+                        <li><a href="DatosUsuario.html">Datos del usuario</a></li>
+                        <li><a href="#" onclick="mostrarComite()">Comite</a></li>
+                        <li><a href="CerrarSesion.html">Cerrar sesion</a></li>
+                        <li><a href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header><br>
+    <br>
+    <main>
+            <div class="word">
+                <h2>Comité</h2>
+            </div>
+            <section com="comite" class="contenedor_comite">
+                <div><input type="text" name="Nombre" placeholder="Comité"> </div>
+            </section>
+            <br>
+            <br>
+            <section ip="persona" class="contenedor_Ip">
+                <div><input type="file" name="Ip" placeholder="Identificacion personal"> </div>
+            </section>
+
+            <section di="Direccion" class="direccion"><!--input 2 izquierdo-->
+                <div><input type="text" name="Direccion" placeholder="Dirección principal"> </div>
+            </section>
+            <br>
+            <br>
+            <section dic="Alterna" class="Alterna"><!--input que debe ser 2 derecho-->
+                <div><input type="tex" name="Alterna" placeholder="Dirección alterna" /> </div>
+            </section>
+
+            <section reunion="Dia" class="reunion">
+                <div><input type="date" name="Di" placeholder="Día de la reunión"></div>
+            </section>
+
+            <section hora="ho" class="reu">
+                <div><input type="time" name="time" id="time" value="Hora de reunión" /></div>
+            </section>
+            <br>
+            <br>
+
+            <section c="ca" class="howmuch">
+                <div><input type="te" name="n" id="time" placeholder="Cada cuanto se reúne" /></div>
+            </section>
+
+            <section integrantes="num" class="members">
+                <div><input type="number" name="age" id="age" min="1" max="100" step="1"
+                        placeholder="Número de integrantes" /></div>
+            </section>
+
+            <section regresar="b" class="regresar">
+                <div><i class="fas fa-chevron-left"></i><input type="button" onclick="history.back()" name="Atrás"
+                        value="Atrás"></div>
+            </section>
+
+
+            <section sig="siguiente" class="next">
+                <div><i class="fas fa-chevron-right"></i><input type="butt" value="Siguiente" /></div>
+        </div>
+
+        <script>
+            function mostrarComite() {
+                document.getElementById("Formulario").style.display = "block";
+            }
+            function cerrarComite() {
+                document.getElementById("Formulario").style.display = "none";
+            }
+        </script>
+    </main>
+</body>
+
+</html>
