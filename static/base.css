@@ -1,6 +1,8 @@
 @import url(login.css);
 @import url(datosuestilo.css);
 @import url(comite.css);
+@import url(CambiarContraseñaestilo.css);
+@import url(eventoestilo.css);
 :root {
     --primary-color: #231f20;
     --secondary-color: #ac1640ea;
