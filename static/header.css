@@ -44,7 +44,7 @@ nav .menu_horizontal a {
     padding: 15px;
     font-size: 16px;
     font-weight: bold;
-    color: var(--white);
+    color: var(--white)!important;
     text-decoration: none;
     transition: all 300ms ease;
 }

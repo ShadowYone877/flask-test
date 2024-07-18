@@ -6,9 +6,9 @@
 {% endblock %}
 {% block content %}
 <main>
-    <section class="mostrar_datos_usuario" id="Datos">
-        <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarDatosUsuario()"><i
-                    class="fa-solid fa-xmark"></i></a></div>
+    <section class="visualizar_datos_usuario" id="Datos">
+        <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarVisualizar()"><i class="fa-solid fa-xmark"></i></a>
+        </div>
         <div class="fecha_registro">
             <input type="date" required>
             <label>Ingrese su fecha de registro</label>
@@ -57,7 +57,9 @@
             <div class="contenedor">
                 <select class="menu_desplegable">
                     <div class="porcentajes"></div>
-                    <div><option disabled selected>Seleccione el porcentaje</option></div>
+                    <div>
+                        <option disabled selected>Seleccione el porcentaje</option>
+                    </div>
                     <div class="opcion">25%</div>
                     <div class="opcion">50%</div>
                     <div class="opcion">75%</div>
@@ -143,10 +145,10 @@
             <input type="number" id="num interno" name="num interno" placeholder="num interno">
         </form>
         <script>
-            function mostrarDatosUsuario() {
+            function mostrarVisualizar() {
                 document.getElementById("Datos").style.display = "block";
             }
-            function cerrarDatosUsuario() {
+            function cerrarVisualizar() {
                 document.getElementById("Datos").style.display = "none";
             }
         </script>

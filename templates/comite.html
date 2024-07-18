@@ -5,18 +5,15 @@
     {% include "header.html" %}
 </header>
 {% endblock %}
-
 {% block content %}
 <main>
-    <div class="comite" id="Cont">
-        <div id="cerrarcomite"><a href="javascript:void(0)" onclick="cerrarComite()"><i class="fa-solid fa-xmark"></i></a>
-            </div>
-
-        <div class="contenedor_vista">
+        <div class="contenedor_vista" id="Cont">
+                <div id="cerrarcomite"><a href="javascript:void(0)" onclick="cerrarComite()">
+                    <i class="fa-regular fa-circle-xmark"></i></div>
             <div class="word">
                 <h2>Comité</h2>
             </div>
-
+            <section co="but" class="comite">
             <div><input type="text" name="Nombre" placeholder="Comité"></div>
     </section>
     <br>
@@ -69,8 +66,6 @@
         function cerrarComite() {
             document.getElementById("Cont").style.display = "none";
         }
-
     </script>
-    </div>
 </main>
 {% endblock %}
