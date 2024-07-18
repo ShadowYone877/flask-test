@@ -28,3 +28,11 @@ def evento():
 @app.route("/comite")
 def comite():
     return render_template("comite.html")
+
+@app.route("/card")
+def card():
+    return render_template("card.html")
+
+@app.route("/grid1")
+def grid1():
+    return render_template("grid1.html")
