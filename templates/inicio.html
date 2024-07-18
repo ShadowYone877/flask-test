@@ -1,22 +1,16 @@
 {% extends "base_template.html" %}
-{% block content %}
-<!-- * Barra de navegacion -->
+{% block header %}
 <header>
-  <nav class="navbar">
-    <strong>
-      <a href="">Contacto</a>
-      <a href="">Militantes</a>
-      <a href="">Comité</a>
-      <a href="">Inicio</a>
-    </strong>
-  </nav>
+    {% include "header.html" %}
 </header>
-  <main>
+{% endblock %}
+{% block content %}
+<main>
         <section class="seccionGral">
             <!-- * Bloque para iniciar sesion-->
             <section class="login">
               <h1 class="titulo">Militancia</h1>
-            <button>Iniciar sesión</button>
+            <button><a href="{{ url_for('login') }}">Iniciar sesión</a></button>
             </p>
             <button class="secButton">Registrarse</button>
           </section>

@@ -7,7 +7,7 @@ def index():
     return render_template("inicio.html")
 
 @app.route("/datosusuario")
-def hello():
+def datosUsuario():
     return render_template("datosu.html")
 
 @app.route("/CambiarContraseña")
