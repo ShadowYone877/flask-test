@@ -6,58 +6,47 @@
 {% endblock %}
 {% block content %}
 <main>
-    <section class="Mostrar_Datos_Usuario" id="Datos">
-        <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarDatosUsuario()"><i
+    <section class="mostrar_datos_usuario" id="Datos">
+        <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarDatosUsuario()"><i
                     class="fa-solid fa-xmark"></i></a></div>
-        <form>
-            <label for="fecha de registro">Fecha de registro</label>
-            <input type="date" id="fecha de registro" name="fecha de registro" placeholder="DD/MM/AA" />
-            <br>
-            <br>
-            <label for="comité asignado">Comité asignado</label>
-            <input type="text" id="comité asignado" name="comité asignado" placeholder="Ingrese su comité" />
-            <br>
-            <br>
-            <label for="coordinador de comité">Coordinador de comité</label>
-            <input type="text" id="coordinador de comité" name="coordinador de comité"
-                placeholder="Comité que Coordina" />
-            <br>
-            <br>
-            <a href="#Cambiar contraseña" onclick="mostrarContraseña()"><span style="color: white;">Cambiar
-                    contraseña</span></a>
-            <a href="index.html" class="Botón_regresar">Regresar</a>
-        </form>
-    </section>
-    <section class="Cambiar_contraseña" id="contraseñas">
-        <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarContraseña()"><i class="fa-solid fa-xmark"></i></a>
+        <div class="fecha_registro">
+            <input type="date" required>
+            <label>Ingrese su fecha de registro</label>
         </div>
-        <form>
-            <label for="antigua contraseña">Antigua contraseña</label>
-            <br>
-            <br>
-            <input type="password" id="antigua contraseña" name="antigua contraseña">
-            <br>
-            <br>
-            <label for="nueva contraseña">Nueva contraseña</label>
-            <br>
-            <br>
-            <input type="password" id="nueva contraseña" name="nueva contraseña">
-            <br>
-            <br>
-            <label for="Confirmar contraseña">Confirmar contraseña</label>
-            <br>
-            <br>
-            <input type="password" id="Confirmar contraseña" name="antigua contraseña">
-            <br>
-            <br>
-            <a href="datosu.html" class="Botón_Cambiar">Cambiar</a>
-            <br>
-            <br>
-            <a href="datosu.html" class="Botón_Guardar">Guardar</a>
-        </form>
+        <div class="comite_asignado">
+            <input type="text" required>
+            <label>Comité asignado</label>
+        </div>
+        <div class="coordinador_comite">
+            <input type="text" required>
+            <label>Comité que coordina</label>
+        </div>
+        <br>
+        <br>
+        <a href="#" onclick="mostrarContraseña()"><span style="color: white;">Cambiar
+                contraseña</span></a>
+        <a href="index.html" class="Botón_regresar">Regresar</a>
+    </section>
+    <section class="cambiar_contraseña" id="contraseñas">
+        <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarContraseña()"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <div class="antigüa_contraseña">
+            <input type="password" required>
+            <label>Ingrese su antigüa contraseña</label>
+        </div>
+        <div class="nueva_contraseña">
+            <input type="password" required>
+            <label>Ingrese su nueva contraseña</label>
+        </div>
+        <div class="confirmar_contraseña">
+            <input type="password" required>
+            <label>Comfirme su nueva contraseña</label>
+        </div>
+        <a href="datosu.html" class="Botón_Cambiar">Cambiar</a>
+        <a href="datosu.html" class="Botón_Guardar">Guardar</a>
     </section>
     <section class="Evento" id="formulario">
-        <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarEvento()"><i class="fa-solid fa-xmark"></i></a>
+        <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarEvento()"><i class="fa-solid fa-xmark"></i></a>
         </div>
         <form>
             <label for="fecha inicial del evento">Fecha inicial del evento</label>
@@ -65,13 +54,14 @@
             <label for="fecha final del evento">Fecha final del evento</label>
             <input type="date" id="fecha final" name="fecha final">
             <label for="porcentaje realizado">Porcentaje realizado</label>
-            <div class="Contenedor">
-                <select class="Menu_desplegable">
-                    <option disabled selected>Seleccione el porcentaje</option>
-                    <option>25%</option>
-                    <option>50%</option>
-                    <option>75%</option>
-                    <option>100%</option>
+            <div class="contenedor">
+                <select class="menu_desplegable">
+                    <div class="porcentajes"></div>
+                    <div><option disabled selected>Seleccione el porcentaje</option></div>
+                    <div class="opcion">25%</div>
+                    <div class="opcion">50%</div>
+                    <div class="opcion">75%</div>
+                    <div class="opcion">100%</div>
                 </select>
             </div>
             <br>
@@ -92,12 +82,12 @@
                 </form>
             </div>
             <br>
-            <a href="#Ubicación" onclick="mostrarUbicacion()"><span style="color: white;">Ubicación</span></a>
+            <a href="#" onclick="mostrarUbicacion()"><span style="color: white;">Ubicación</span></a>
             <a href="index.html" class="Botón_regresar">Regresar</a>
             <form>
     </section>
     <section class="Ubicacion_Evento" id="lugar">
-        <div id="Cerrar"><a href="javascript:void(0)" onclick="cerrarUbicacion()"><i class="fa-solid fa-xmark"></i></a>
+        <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarUbicacion()"><i class="fa-solid fa-xmark"></i></a>
         </div>
         <form>
             <label for="codigo postal">Código Postal</label>
@@ -185,6 +175,11 @@
             function cerrarUbicacion() {
                 document.getElementById("lugar").style.display = "none";
             }
+        </script>
+        <script>
+            const select = document.querySelector(".menu_desplegable");
+            const porcentajes = document.querySelector(".porcentajes");
+            const opcion = document.querySelector(".opcion");
         </script>
 </main>
 {% endblock %}
