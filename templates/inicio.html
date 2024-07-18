@@ -1,34 +1,17 @@
-<!DOCTYPE html>
-<html lang="es-MX">
-  <html>
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width" />
-      <meta name="robots" content="index, follow" />
-      <meta name="theme-color" content="#09f" />
-      <title>Militancia</title>
-      <link rel="icon" type="image/png" href="" />
-      <meta name="description" content="" />
-    
-      <!-- * Llamada al archivo CSS -->
-      <link rel="stylesheet" href="{{ url_for('static', filename='inicio.css') }}">
-      <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
-    </head>
-
-    <body>
-      <!-- * Barra de navegacion -->
-      <header>
-        <nav class="navbar">
-          <strong>
-            <a href="">CONTACTO</a>
-            <a href="">MILITANTES</a>
-            <a href="">COMITÉ</a>
-            <a href="">INICIO</a>
-          </strong>
-        </nav>
-    </header>
-    
-    <main>
+{% extends "base_template.html" %}
+{% block content %}
+<!-- * Barra de navegacion -->
+<header>
+  <nav class="navbar">
+    <strong>
+      <a href="">Contacto</a>
+      <a href="">Militantes</a>
+      <a href="">Comité</a>
+      <a href="">Inicio</a>
+    </strong>
+  </nav>
+</header>
+  <main>
         <section class="seccionGral">
             <!-- * Bloque para iniciar sesion-->
             <section class="login">
@@ -52,10 +35,5 @@
               <legend><header><h2>Avisos</h2></header></legend>
           </section>
         </section>
-      </main>
-
-      <footer>
-      </footer>
-    </body>
-  </html>
-</html>
+    </main>
+{% endblock %}
