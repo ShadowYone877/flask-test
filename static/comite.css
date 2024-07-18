@@ -10,10 +10,15 @@
     width: 300%; /*ancho del elemento*/
     height: 500px;
     max-width: 500px;
-    background: rgba(172, 22, 64, 0.918);
+    background-color: var(--secondary-color);
     padding: 15px; /*es el espacio que existe entre el texto y recuadro*/
     align-items: center; 
   }
+
+.fa-solid.fa-xmark{
+  color: #e1e1e1;
+  position: absolute; left:455px; top:23px;
+}
 
 .word{
   text-align: center;
@@ -21,7 +26,7 @@
 }
 
 input[type=text] {  
-  color:black;
+  background-color: var(--primary-color);
   width: 42%;
   height: 10px;
   max-width: 300px;
@@ -110,7 +115,7 @@ input[type=button]{
   width: 23%;
   height: 35px;
   border-radius:25px;  
-  background-color: rgba(172, 22, 64, 0.918);
+  background-color: var(--secondary-color);
   position: absolute; left: 80px; top: 406px;
   z-index: 0;
 }
@@ -126,7 +131,7 @@ input[type=butt]{
   width: 23%;
   height: 35px;
   border-radius:25px;  
-  background-color: rgba(172, 22, 64, 0.918);
+  background-color: var(--secundary-color);
   position: absolute; left: 318px; top: 406px;
   z-index: 0;
 }
