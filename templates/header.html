@@ -4,12 +4,18 @@
     <div class="Logotipo">
         <i class="fa-solid fa-user"></i>Nombre del Militante
     </div>
-    <ul class="Lista">
-        <li><a href="#">Datos Personales</a></li>
-        <li><a href="#" onclick="mostrarDatosUsuario()">Datos del Usuario</a></li>
-        <li><a href="#" onclick="mostrarEvento()">Evento</a></li>
+    <ul class="menu_horizontal">
+        <li><a href="#">Inicio</a></li>
         <li><a href="#" onclick="mostrarComite()">Comite</a></li>
-        <li><a herf="#">Cerrar Sesión</a></li>
+        <li>
+            <a herf="#">Militantes</a>
+            <ul class="menu_vertical">
+                <li><a href="#">Datos personales</a></li>
+                <li><a href="#" onclick="mostrarDatosUsuario()">Datos del Usuario</a></li>
+                <li><a href="#" onclick="mostrarEvento()">Evento</a></li>
+                <li><a href="#">Cerrar sesión</a></li>
+            </ul>
+        </li>
         <li><a href="#">Contacto</a></li>
     </ul>
     <label for="Mostrar" class="Barra_íconos">
