@@ -1,0 +1,97 @@
+.Utilidades{
+    font-size: 20px;
+    font-family: 20px;
+}
+
+.Evento{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color); 
+    padding: 75px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    color: white; 
+    border-radius: 20px;
+    font-size: 25px;
+    width: 80%;
+    gap: 20px;
+    border:outset;
+    border-color: black; 
+}
+
+.Ubicacion_Evento{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--secondary-color);
+    width: 60%;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+    position: absolute;
+    left: 20%;
+    top: 13%;
+    display: none;
+    z-index: 1000;
+    gap: 20px;      
+    height: 40%;
+    border:outset;
+    border-color: black;             
+}
+
+.contenedor{
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu_desplegable{
+    background-color: var(--secondary-color);
+    padding: 20px;
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.porcentajes{
+    position: absolute;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 6px;
+    margin-top: 14px;
+    padding: 0 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    transition: .4s linear .2s;
+    height: 0;
+}
+
+.opcion{
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 3.s ease-in-out;
+}
+
+.opcion:hover{
+    color: var(--primary-color);
+}
+
+.porcentajes::-webkit-scrollbar{
+    width: 4px;
+    background-color: var(--secondary-color);
+}
+
+.porcentajes::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color);
+}

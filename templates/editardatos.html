@@ -6,46 +6,7 @@
 {% endblock %}
 {% block content %}
 <main>
-    <section class="visualizar_datos_usuario" id="Datos">
-        <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarVisualizar()"><i class="fa-solid fa-xmark"></i></a>
-        </div>
-        <div class="fecha_registro">
-            <input type="date" required>
-            <label>Ingrese su fecha de registro</label>
-        </div>
-        <div class="comite_asignado">
-            <input type="text" required>
-            <label>Comité asignado</label>
-        </div>
-        <div class="coordinador_comite">
-            <input type="text" required>
-            <label>Comité que coordina</label>
-        </div>
-        <br>
-        <br>
-        <a href="#" onclick="mostrarContraseña()"><span style="color: white;">Cambiar
-                contraseña</span></a>
-        <a href="index.html" class="Botón_regresar">Regresar</a>
-    </section>
-    <section class="cambiar_contraseña" id="contraseñas">
-        <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarContraseña()"><i class="fa-solid fa-xmark"></i></a>
-        </div>
-        <div class="antigüa_contraseña">
-            <input type="password" required>
-            <label>Ingrese su antigüa contraseña</label>
-        </div>
-        <div class="nueva_contraseña">
-            <input type="password" required>
-            <label>Ingrese su nueva contraseña</label>
-        </div>
-        <div class="confirmar_contraseña">
-            <input type="password" required>
-            <label>Comfirme su nueva contraseña</label>
-        </div>
-        <a href="datosu.html" class="Botón_Cambiar">Cambiar</a>
-        <a href="datosu.html" class="Botón_Guardar">Guardar</a>
-    </section>
-    <section class="Evento" id="formulario">
+    <section class="Evento" id="formulario"><a href="{{url_for('evento')}}"></a>
         <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarEvento()"><i class="fa-solid fa-xmark"></i></a>
         </div>
         <form>
@@ -144,23 +105,6 @@
             <label for="interno">No. Int</label>
             <input type="number" id="num interno" name="num interno" placeholder="num interno">
         </form>
-        <script>
-            function mostrarVisualizar() {
-                document.getElementById("Datos").style.display = "block";
-            }
-            function cerrarVisualizar() {
-                document.getElementById("Datos").style.display = "none";
-            }
-        </script>
-        <script>
-            function mostrarContraseña() {
-                document.getElementById("contraseñas").style.display = "block";
-            }
-
-            function cerrarContraseña() {
-                document.getElementById("contraseñas").style.display = "none";
-            }
-        </script>
         <script>
             function mostrarEvento() {
                 document.getElementById("formulario").style.display = "block";

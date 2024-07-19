@@ -1,0 +1,60 @@
+.Botón_regresar{
+    display: inline-block;
+    background-color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    border-style: outset;
+    border-color: black;
+    position: absolute;
+    left:78%;
+    top: 77%;
+    color: var(--secondary-color);
+}
+
+.visualizar_datos_usuario {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color); 
+    padding: 75px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    color: white; 
+    border-radius: 20px;
+    font-size: 25px;
+    width: 50%;
+    border:outset;
+    border-color: black;
+}
+
+.fecha_registro{
+    position: relative;
+}
+
+.fecha_registro input{
+    width: 350px;
+    height: 60px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0px 15px;
+    border: 2px solid var(--primary-color);
+    background: transparent;
+    color: var(--white);
+    outline: none;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+#cerrar{
+    position: absolute;
+    right: 5%;
+    top: 3%
+}
+
+.fa-solid.fa-xmark{
+    color: var(--grey_base-color);
+}

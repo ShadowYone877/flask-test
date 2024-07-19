@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cerrar Sesión</title>
+</head>
+{% block content %}
+<main>
+    <section class="cerrar_sesion" id="logout">
+        <h1>Sesión cerrada...¡Hasta luego!</h1>
+        <a href="{{url_for('inicio')}}" class="boton_regresar_inicio">Regresar a inicio</a>
+    </section>
+    <script>
+        function mostrarLogOut() {
+            document.getElementById("logout").style.display = "block";
+        }
+    </script>
+</main>
+{% endblock %}
+
+</html>

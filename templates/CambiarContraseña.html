@@ -6,49 +6,30 @@
 {% endblock %}
 {% block content %}
 <main>
-    <section>
-        <div class="Cambiar_contraseña" id="contraseñas">
-            <div id="Cerrar"><a href="javascript:cerrar()"><i class="fa-solid fa-xmark"></i></a></div>
-            <p>Cambiar contraseña</p>
-            <br>
-            <form>
-                <label for="antigua contraseña">Antigua contraseña</label>
-                <br>
-                <br>
-                <input type="password" id="antigua contraseña" name="antigua contraseña">
-                <br>
-                <br>
-                <label for="nueva contraseña">Nueva contraseña</label>
-                <br>
-                <br>
-                <input type="password" id="nueva contraseña" name="nueva contraseña">
-                <br>
-                <br>
-                <label for="Confirmar contraseña">Confirmar contraseña</label>
-                <br>
-                <br>
-                <input type="password" id="Confirmar contraseña" name="antigua contraseña">
-            </form>
-            <br>
-            <br>
-            <a href="CambiarContraseña.html" class="Botón_Cambiar">Cambiar</a>
-            <br>
-            <br>
-            <a href="CambiarContraseña.html" class="Botón_Guardar">Guardar</a>
+    <section class="cambiar_contraseña" id="contraseñas">
+        <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarContraseña()"><i class="fa-solid fa-xmark"></i></a>
         </div>
+        <div class="antigüa_contraseña">
+            <input type="password" required>
+            <label>Ingrese su antigüa contraseña</label>
+        </div>
+        <div class="nueva_contraseña">
+            <input type="password" required>
+            <label>Ingrese su nueva contraseña</label>
+        </div>
+        <div class="confirmar_contraseña">
+            <input type="password" required>
+            <label>Comfirme su nueva contraseña</label>
+        </div>
+        <a href="{{url_for('mostrarDatosU')}}" class="Botón_Cambiar">Cambiar</a>
+        <a href="{{url_for('mostrarDatosU')}}"class="Botón_Guardar">Guardar</a>
     </section>
-    <section class="Ventana_contraseña">
-        <a href="javascript:abrir()">Abrir ventana</a>
-
-    </section>
-
-
-    <script>
-        function abrir() {
+        <script>
+        function mostrarContraseña() {
             document.getElementById("contraseñas").style.display = "block";
         }
 
-        function cerrar() {
+        function cerrarContraseña() {
             document.getElementById("contraseñas").style.display = "none";
         }
     </script>
