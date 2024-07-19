@@ -1,3 +1,8 @@
+.Utilidades{
+    font-size: 20px;
+    font-family: 20px;
+}
+
 .Evento{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -6,7 +11,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #8b0000; 
+    background-color: var(--secondary-color); 
     padding: 75px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -15,12 +20,15 @@
     font-size: 25px;
     width: 80%;
     gap: 20px;
+    border:outset;
+    border-color: black; 
 }
+
 .Ubicacion_Evento{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: #8b0000;
-    width: 30%;
+    background-color: var(--secondary-color);
+    width: 60%;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
@@ -28,40 +36,62 @@
     margin: 20px;
     border-radius: 20px;
     position: absolute;
-    right:34%;
+    left: 20%;
     top: 13%;
     display: none;
     z-index: 1000;
-    gap: 20px                   
+    gap: 20px;      
+    height: 40%;
+    border:outset;
+    border-color: black;             
 }
 
-#Cerrar{
-    position: absolute;
-    right: 5%;
-    top: 3%
+.contenedor{
+    width: 300px;
+    cursor: pointer;
+    position: relative;
 }
 
-form{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+.menu_desplegable{
+    background-color: var(--secondary-color);
+    padding: 20px;
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 6px;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.Botón_regresar{
-    display: inline-block;
-    background-color: white;
-    padding: 15px;
-    text-decoration: none;
-    border-radius: 20px;
-    border-style: outset;
-    border-color: black;
+.porcentajes{
     position: absolute;
-    left:89%;
-    top: 88%;
-    color:#8b0000;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 6px;
+    margin-top: 14px;
+    padding: 0 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    transition: .4s linear .2s;
+    height: 0;
 }
 
-.Utilidades{
-    font-size: 20px;
-    font-family: 20px;
+.opcion{
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 3.s ease-in-out;
+}
+
+.opcion:hover{
+    color: var(--primary-color);
+}
+
+.porcentajes::-webkit-scrollbar{
+    width: 4px;
+    background-color: var(--secondary-color);
+}
+
+.porcentajes::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color);
 }
