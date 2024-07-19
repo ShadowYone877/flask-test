@@ -13,10 +13,10 @@
                 <li><a href="{{url_for('editarDatos')}}" onclick="mostrarEdicion()">Editar datos</a></li>
             </ul>
         </li>
-        <li><a href="#" onclick="mostrarComite()">Comite</a></li>
-        <li><a href="#" onclick="mostrarEvento()">Evento</a></li>
-        <li><a href="#">Admin</a></li>
-        <li><a href="{{url_for('')}}">Cerrar sesión</a></li>
+        <li><a href="{{url_for('comite')}}" onclick="mostrarComite()">Comite</a></li>
+        <li><a href="{{url_for('evento')}}" onclick="mostrarEvento()">Evento</a></li>
+        <li><a href="{{url_for('mostrarAdmin')}}" onclick="mostrarComite() ">Admin</a></li>
+        <li><a href="{{url_for('cerrarSesion')}}" onclick="mostrarLogOut()">Cerrar sesión</a></li>
     </ul>
     <label for="Mostrar" class="Barra_íconos">
         <div class="Línea"></div>
