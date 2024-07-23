@@ -6,126 +6,79 @@
 {% endblock %}
 {% block content %}
 <main>
-    <section class="Evento" id="formulario"><a href="{{url_for('evento')}}"></a>
-        <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarEvento()"><i class="fa-solid fa-xmark"></i></a>
-        </div>
-        <form>
-            <label for="fecha inicial del evento">Fecha inicial del evento</label>
-            <input type="date" id="fecha inicial" name="fecha inicial">
-            <label for="fecha final del evento">Fecha final del evento</label>
-            <input type="date" id="fecha final" name="fecha final">
-            <label for="porcentaje realizado">Porcentaje realizado</label>
-            <div class="contenedor">
-                <select class="menu_desplegable">
-                    <div class="porcentajes"></div>
-                    <div>
-                        <option disabled selected>Seleccione el porcentaje</option>
-                    </div>
-                    <div class="opcion">25%</div>
-                    <div class="opcion">50%</div>
-                    <div class="opcion">75%</div>
-                    <div class="opcion">100%</div>
-                </select>
-            </div>
-            <br>
-            <div class="Utilidades">
-                <form>
-                    <label>¿Qué materiales se utilizaron?</label><br>
-                    <input type="checkbox">Lonas<br>
-                    <label>¿Cuántas lonas se utilizaron?</label><br>
-                    <input type="number" id="cantidad"><br>
-                    <input type="checkbox">Volantes<br>
-                    <label>¿Cuántos volantes se utilizaron?</label><br>
-                    <input type="number" id="cantidad volantes"><br>
-                    <label>¿Se realizaron reuniones de comite?</label><br>
-                    <input type="checkbox">Si<br>
-                    <label>¿Cuántas reuniones se llevaron acabo?</label><br>
-                    <input type="number" id="cantidad reuniones"><br>
-                    <input type="checkbox">No<br>
-                </form>
-            </div>
-            <br>
-            <a href="#" onclick="mostrarUbicacion()"><span style="color: white;">Ubicación</span></a>
-            <a href="index.html" class="Botón_regresar">Regresar</a>
-            <form>
-    </section>
-    <section class="Ubicacion_Evento" id="lugar">
-        <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarUbicacion()"><i class="fa-solid fa-xmark"></i></a>
-        </div>
-        <form>
-            <label for="codigo postal">Código Postal</label>
-            <input type="number" id="codigo postal" name="codigo postal">
-            <label for="estado">Estado</label>
-            <div class="Caja">
-                <select class="Estado_desplegable">
-                    <option disabled selected>Seleccione su estado</option>
-                    <option>Aguascalientes</option>
-                    <option>Baja California</option>
-                    <option>Baja California Sur</option>
-                    <option>Campeche</option>
-                    <option>Chiapas</option>
-                    <option>Chihuahua</option>
-                    <option>Ciudad de México</option>
-                    <option>Coahuila</option>
-                    <option>Colima</option>
-                    <option>Durango</option>
-                    <option>Estado de México</option>
-                    <option>Guanajuato</option>
-                    <option>Guerrero</option>
-                    <option>Hidalgo</option>
-                    <option>Jalisco</option>
-                    <option>Michoacán</option>
-                    <option>Morelos</option>
-                    <option>Nayarit</option>
-                    <option>Nuevo León</option>
-                    <option>Oaxaca</option>
-                    <option>Puebla</option>
-                    <option>Querétaro</option>
-                    <option>Quintana Roo</option>
-                    <option>San Luis Potosí</option>
-                    <option>Sinaloa</option>
-                    <option>Sonora</option>
-                    <option>Tabasco</option>
-                    <option>Tamaulipas</option>
-                    <option>Tlaxcala</option>
-                    <option>Veracruz</option>
-                    <option>Yucatán</option>
-                    <option>Zacatecas</option>
-                </select>
-            </div>
-            <label for="colonia">Colonia</label>
-            <input type="text" id="Ingresar colonia" name="Ingresar colonia" placeholder="Ingrese su colonia">
-            <label for="municipio o alcaldía">Municipio o Alcaldía</label>
-            <input type="text" id="municipio o alcaldía" name="municipio o alcaldía"
-                placeholder="Ingrese su Municipio o Alcaldía">
-            <label for="calle">Calle</label>
-            <input type="text" id="Ingresar calle" name="Ingresar calle" placeholder="Ingrese su calle">
-            <label for="exterior">No. Ext</label>
-            <input type="number" id="num exterior" name="num exterior" placeholder="num exterior">
-            <label for="interno">No. Int</label>
-            <input type="number" id="num interno" name="num interno" placeholder="num interno">
-        </form>
-        <script>
-            function mostrarEvento() {
-                document.getElementById("formulario").style.display = "block";
-            }
-            function cerrarEvento() {
-                document.getElementById("formulario").style.display = "none";
-            }
-        </script>
-        <script>
-            function mostrarUbicacion() {
-                document.getElementById("lugar").style.display = "block";
-            }
+    <div class="contenedor_evento">
 
-            function cerrarUbicacion() {
-                document.getElementById("lugar").style.display = "none";
-            }
-        </script>
-        <script>
-            const select = document.querySelector(".menu_desplegable");
-            const porcentajes = document.querySelector(".porcentajes");
-            const opcion = document.querySelector(".opcion");
-        </script>
+        <div class="evento"></div>
+        <p class="num_exterior">Num. exterior</p>
+        <p class="municipio_alcaldia">Municipio/Alcaldía</p>
+        <p class="porcentaje">Porcentaje realizado</p>
+        <p class="fecha_final">Fecha final de evento</p>
+        <p class="num_interior">Num.interior</p>
+        <p class="lona">. Lona</p>
+        <p class="volantes ">. Volantes</p>
+        <p class="reunion">. Reunion comité</p>
+        <input class="ingresar_cp" type="text" name="ingresar cp" id="ingresar cp" placeholder="Ejem-CP.87902">
+        <input class="ingresar_calle" type="text" name="ingresar calle" id="ingresar calle"
+            placeholder="Ingrese su calle">
+        <p class="calle">Calle</p>
+        <p class="cp">Código postal</p>
+        <input class="ingresar_estado" type="text" name="ingresar estado" id=" ingresar estado"
+            placeholder="Seleccione una opción">
+        <input class="ingresar_alcaldia" type="text" name="ingresar alcaldia" id="ingresar alcaldia"
+            placeholder="Ingrese su Alcaldía/Municipio">
+        <input class="ingresar_num_exterior" type="number" name="num exterior" id="no exterior">
+        <input class="ingresar_num_interior" type="text" name="num interior" id="num interior">
+        <p class="evento2">Evento</p>
+        <input class="ingresar_fecha_inicial" type="date" name="ingresar inicio" id="ingresar inicio">
+        <input class="ingresar_fecha_final" type="date" name="ingresar final" id="ingresar final">
+        <div class="seleccionar_menu">
+            <!--<div clas="seleccionar">
+                <span>Selecione el porcentaje</span>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="porcentajes">
+                <div class="opcion">25%</div>
+                <div class="opcion">50%</div>
+                <div class="opcion">75%</div>
+                <div class="opcion">100%</div>
+            </div>-->
+            <label for="cars">Choose a car:</label>
+
+            <select id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <input class="ingresar_porcentaje" type="number" name="ingresar porcentaje" id="porcentaje">
+        <p class="fecha_inicial">Fecha inicial de evento</p>
+        <p class="lugar">Lugar</p>
+        <p class="estado">Estado </p>
+    </div>
+    <script>
+
+        function cerrarEvento() {
+            document.getElementById("formulario").style.display = "none";
+        }
+    </script>
+    <script>
+        const select = document.querySelector(".seleccionar");
+        const porcentajes = document.querySelector(".porcentajes");
+        const opciones = document.querySelector(".opcion");
+        select.addEventListener("click", () => {
+            porcentajes.classList.toggle("active");
+            select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+        });
+        optiones.forEach((opcion) => {
+            opcion.addEventListener("click", () => {
+                optiones.forEach((opcion) => { opcion.classList.remove('seleccionar') });
+                select.querySelector("span").innerHTML = opcion.innerHTML;
+                opcion.classList.add("seleccionar");
+                porcentajes.classList.toggle("active");
+                select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+            });
+        });
+    </script>
 </main>
 {% endblock %}

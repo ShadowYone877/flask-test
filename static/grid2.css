@@ -11,3 +11,17 @@
     align-content: center;
     padding: 6px;
 }
+
+.botón_registrar{
+    display: inline-block;
+    background-color: var(--secondary-color);
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 15px;
+    border-style: outset;
+    border-color: black;
+    position: absolute;
+    left:80%;
+    top: 15%;
+    color: var(--white);
+}
