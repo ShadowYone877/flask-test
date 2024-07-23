@@ -6,6 +6,7 @@
 @import url(header.css);
 @import url(inicio.css);
 @import url(editardatosestilo.css);
+@import url(grid2.css);
 
 :root {
     --primary-color: #231f20;

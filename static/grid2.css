@@ -1,0 +1,13 @@
+.container_grid{
+    padding: 160px;
+}
+
+.col-sm{
+    width: 100%;
+    padding: 5px;
+    display:grid;
+    color: blue;
+    justify-content: space-around;
+    align-content: center;
+    padding: 6px;
+}
