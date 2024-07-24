@@ -16,7 +16,7 @@ def login():
 def inicio():
     return render_template("inicio.html")
     
-@app.route("/Registro")
+@app.route("/registro")
 def Registro():
     return render_template("Registro.html")
 
@@ -65,6 +65,10 @@ def registroForm():
             return redirect(next)
         return redirect(url_for('login'))
     return render_template("registroForm.html",form=form)
+
+@app.route("/registro_usuario")
+def registrousuario():
+    return render_template("registrousuario.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
