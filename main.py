@@ -52,7 +52,7 @@ def editarDatos():
 def mostrarAdmin():
     return render_template("admin.html")
 
-@app.route("/registroForm", methods=["GET","POST"])
+@app.route("/registroForm")
 def registroForm():
     form=registerForm()
     if form.validate_on_submit():
