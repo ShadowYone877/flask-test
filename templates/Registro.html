@@ -1,88 +1,88 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='Registro.css') }}">    
-    <title>Document</title>
-
-    <div class="content">
-      <div class="menu container">
-        <a href="index.html" class="logo"
-          ><img src="images/logo2.png" alt=""
-        /></a>
-        <input type="checkbox" id="menu" />
-        <div class="parra">
-          <p>Nombre del militante</p>
-        </div>
-        <label for="menu"> </label>
-        <nav class="navbar">
-          <ul>
-            <li><a href="index.html">Datos personales</a></li>
-            <li><a href="DatosUsuario.html">Datos del usuario</a></li>
-            <li><a href="CerrarSesion.html">Cerrar sesion</a></li>
-            <li><a href="Contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </head>
-  <body>
-    <header class="header">
-      <div class="cuadrado">
-        <p>Registro de Militante</p>
-        <div class="pre">
-      <div class="municipio">  <textarea name="Municipio" id="">Municipio</textarea></div>
-        <textarea name="Distrito" id="">Distrito</textarea>
-        <textarea name="Nombre" id="">Nombre</textarea>
-
-        <input id="number" type="number" value="" />
-        <textarea name="Genero" id="">Genero</textarea>
-        <tetarea name="Dirrecion" id="">Dirrecion</tetarea>
-        <textarea name="Comite" id="">Comite</textarea>
-        <time>20:00</time>
-        <textarea name="telefono" id="">Telefono 1</textarea>
-        <textarea name="telefono2" id="">Telefono 2</textarea>
-        <textarea name="lugar" id="">lugar de la reunion</textarea>
+{% extends "base_template.html" %}
+{% block header %}
+<header>
+    {% include "header.html" %}
+</header>
+{% endblock %}
+{% block content %}
+<div class="v3_6">
+  <div class="rectangulo">
+    
+  </div>
+  <div class="cudrado_uno"></div>
+  <div class="v3_9"><p>Distrito local:</p></div>
+  <div class="Cuadrado_dos"></div>
+  <div class="v3_11"><p>Registro de militantes</p></div>
+  <span class="v3_12">Nombre:</span>
+  <span class="v3_14">Telefono:</span>
+  <span class="v3_15">Calle:</span>
+  <span class="v3_16">N°Exterior</span>
+  <span class="v3_17">N°Interior</span>
+  <span class="v3_18">Colonia:</span>
+  <span class="v3_19">Estado:</span>
+  <span class="v3_20">Codigo postal:</span>
+  <span class="v3_21">Municipio/Alcaldia</span>
+  <span class="v3_22">Telefono:</span> 
+  <span class="v3_23">Seccion:</span>
+  <span class="v3_24">Estado:</span>
+  <span class="v3_25">Grado:</span>
+  <span class="v3_26">Grado:</span>
+  <span class="v3_27">Militante:</span>
+  <span class="v3_28">Distrito Federal:</span>
+  <span class="v3_29">Correo:</span>
+  <input class="v3_30" type="text" name="v3_30" placeholder="Nombre completo"/>
+<input
+    class="v3_31"
+    type="text"
+    name="v3_30"
+    placeholder="Telefono celular"
+  />
+  <input class="v3_32" type="text" name="v3_32" placeholder="calle" />
+  <input
+    class="v3_33"
+    type="number"
+    name="v3_33"
+    placeholder="N°Exterior"  />
+  <input
+    class="v3_34"
+    type="number"
+    name="v3_34"
+    placeholder="N°Interior"
+  />
+  <input class="v3_35" type="text" name="v3_35" placeholder="Colonia" />
+  <input
+    class="v3_36"
+    type="text"
+    name=""
+    id=""
+    placeholder="Municipio/Alcaldia"
+  />
+  <input class="v3_37" type="text" name="" id="" />
+  <input class="v3_38" type="text" name="" id="" />
+  <input
+    class="v3_39"
+    type="tel"
+    id="tel"
+    name="tel"
+    placeholder="Telefono local*"
+  />
+  <input class="v3_41" type="text" name="te" placeholder="Grado" />
+  <input class="v3_42" type="text" name="te" placeholder="Estado" />
+  <input class="v3_43" type="text" name="te" placeholder="Militante" />
+  <input class="v3_44" type="text" name="te" placeholder="Seccion" />
+  <input
+    class="v3_45"
+    type="text"
+    name="te"
+    placeholder="Distrito Federal"
+  />
+  <input class="v3_46" type="text" name="te" placeholder="Distrito local" />
+  <input
+    class="v3_47"
+    type="email"
+    id="email"
+    name="email"
+    placeholder="Correo email"
+  />
 </div>
-        <div class="tres">
-
-          <select name="" id="Estados">
-            <option selected disabled>Seleciona un elemento</option>
-            <option>Aguascalientes</option>
-            <option>Baja California</option>
-            <option>Baja California Sur</option>
-            <option>Campeche</option>
-            <option>Chiapas</option>
-            <option>Chihuahua</option>
-            <option>Ciudad de México</option>
-            <option>Colima</option>
-            <option>Durango</option>
-            <option>Estado de México</option>
-            <option>Guanajuato</option>
-            <option>Guerrero</option>
-            <option>Hidalgo</option>
-            <option>Jalisco</option>
-            <option>Michoacán</option>
-            <option>Morelos</option>
-            <option>Nayarit</option>
-            <option>Nuevo León</option>
-            <option>Oaxaca</option>
-            <option>Puebla</option>
-            <option>Querétaro</option>
-            <option>Quintana Roo</option>
-            <option>San Luis Potosí</option>
-            <option>Sinaloa</option>
-            <option>Sonora</option>
-            <option>Tabasco</option>
-            <option>Tamaulipas</option>
-            <option>Tlaxcala</option>
-            <option>Veracruz</option>
-            <option>Yucatán</option>
-            <option>Zacatecas</option>
-          </select>
-        </div>
-      </div>
-    </header>
-  </body>
-</html>
+{% endblock %}
