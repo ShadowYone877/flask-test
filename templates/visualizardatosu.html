@@ -1,0 +1,38 @@
+{% extends "base_template.html" %}
+{% block header %}
+<header>
+    {% include "header.html" %}
+</header>
+{% endblock %}
+{% block content %}
+<main>
+    <section class="visualizar_datos_usuario" id="Datos">
+        <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarVisualizar()"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <div class="fecha_registro">
+            <input type="date" required>
+            <label>Ingrese su fecha de registro</label>
+        </div>
+        <div class="comite_asignado">
+            <input type="text" required>
+            <label>Comité asignado</label>
+        </div>
+        <div class="coordinador_comite">
+            <input type="text" required>
+            <label>Comité que coordina</label>
+        </div>
+    <!--<a href="{{ url_for('mostrarDatosU') }}" onclick="mostrarContraseña()"><span style="color: white;">Cambiar
+                contraseña</span></a>-->
+        <a href="{{ url_for('inicio') }}" class="Botón_regresar">Regresar</a>
+    </section>
+    </script>
+    <script>
+        function mostrarDatosU() {
+            document.getElementById("Datos").style.display = "block";
+        }
+        function cerrarVisualizar() {
+            document.getElementById("Datos").style.display = "none";
+        }
+    </script>
+</main>
+{% endblock %}

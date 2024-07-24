@@ -1,0 +1,61 @@
+.container_grid {
+    padding: 40px;
+    column-gap: 50px;
+    display: grid;
+    grid-gap: 1px;
+
+}
+.col-sm{
+    width: 100%;
+    padding: 5px;
+    display:grid;
+    color:#ffffff;
+    justify-content: space-around;
+    align-content: center;
+    padding: 6px;
+}
+.row{
+    background-color: var(--secondary-color);
+}
+
+.fa-solid.fa-magnifying-glass{
+    color: #f2f2f2;
+    padding: 4px;
+
+
+}
+
+.fa-solid.fa-pen-to-square{
+    color: #f2f2f2;
+    padding: 4px;
+}
+
+.fa-solid.fa-trash{
+    color: #f2f2f2;
+    padding: 4px;
+}
+.eliminar{
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.botón_registrar{
+    display: inline-block;
+    background-color: var(--secondary-color);
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 15px;
+    border-style: outset;
+    border-color: black;
+    position: absolute;
+    left:80%;
+    top: 15%;
+    color: var(--white);
+}
+
+.fa-solid.fa-book{
+    color: var(--white);
+    padding: 4px;
+}

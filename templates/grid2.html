@@ -1,0 +1,90 @@
+{% extends "base_template.html" %}
+{% block title %} Grid {% endblock %}
+{% block header %}
+<header>
+    {% include "header.html" %}
+</header>
+{% endblock %}
+{% block content %}
+
+<main>
+    <a href="{{ url_for('Registro') }}" class="botón_registrar">Registrar usuario</a>
+        <div class="container_grid">
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container_grid">
+        <table class="table table-bordered">
+        <div class="row"><!--fila-->
+            <div class="col-sm">Nombres</div>
+            <div class="col-sm">Apellido Paterno</div>
+            <div class="col-sm">Apellido Materno</div>
+            <div class="col-sm">Correo</div>
+            <div class="col-sm">Rol</div>
+            <div class="col-sm">Telefono</div>
+            <div class="col-sm">Celular</div>
+            <div class="col-sm">Status</div>
+            <div class="col-sm">Clave electoral</div>
+            <div class="col-sm">Operaciones</div>
+            </div>
+        </div>
+    </table>
+
+        <div class="row">
+            <div class="col-sm"> Regina Valeria </div>
+            <div class="col-sm"> Diaz </div>
+            <div class="col-sm"> Vazquez </div>
+            <div class="col-sm">@gmail.com</div>
+            <div class="col-sm">Militante</div>
+            <div class="col-sm">5555897412</div>
+            <div class="col-sm">5512145698</div>
+            <div class="col-sm"> 1 </div>
+            <div class="col-sm">TEFAXHAAJA569</div>
+            <div class="col-sm"><a href="{{url_for('mostrarDatosU')}}"><i class="fa-solid fa-book"></i></a><i class="fa-solid fa-magnifying-glass"></i></i><i class="fa-solid fa-pen-to-square"></i><i class="fa-solid fa-trash"></i></div>
+            <!--<td><div class="eliminar" onclick="eliminarFila(this)"><i class="fas fa-trash"></i></div></td>-->
+
+        </div>
+        <div class="row">
+            <div class="col-sm"> Jason Josie </div>
+            <div class="col-sm"> Rojas </div>
+            <div class="col-sm"> Rosales </div>
+            <div class="col-sm">@gmail.com</div>
+            <div class="col-sm">Militante</div>
+            <div class="col-sm">5589656454</div>
+            <div class="col-sm">5544778900</div>
+            <div class="col-sm"> 0 </div>
+            <div class="col-sm">WHASJDJSK09NA</div>
+            <div class="col-sm"><a href="{{url_for('mostrarDatosU')}}"><i class="fa-solid fa-book"></i></a><a href=""></a><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-pen-to-square"></i><i
+                        class="fa-solid fa-trash"></i></div>
+        </div>
+        <div class="row">
+            <div class="col-sm"> Jorgeee </div>
+            <div class="col-sm"> Yone </div>
+            <div class="col-sm"> Hernandez </div>
+            <div class="col-sm">@gmail.com</div>
+            <div class="col-sm">Militante</div>
+            <div class="col-sm">5556874102</div>
+            <div class="col-sm">5687410239</div>
+            <div class="col-sm"> 1 </div>
+            <div class="col-sm">POASKIWE78QYJN</div>
+            <div class="col-sm"><a href="{{url_for('mostrarDatosU')}}"><i class="fa-solid fa-book"></i></a><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-pen-to-square"></i><i
+                        class="fa-solid fa-trash"></i></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script>
+            function eliminarFila(button) {
+              // Obtener la fila a la que pertenece el botón
+              var fila = button.parentNode.parentNode;
+              // Eliminar la fila
+              fila.parentNode.removeChild(fila);
+            }
+          </script>
+</main>
+</body>
+{% endblock %}

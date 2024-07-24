@@ -1,11 +1,17 @@
 @import url(login.css);
-@import url(datosuestilo.css);
+@import url(visualizardatosuestilo.css);
 @import url(comite.css);
 @import url(CambiarContraseñaestilo.css);
 @import url(eventoestilo.css);
 @import url(header.css);
 @import url(inicio.css);
+<<<<<<< HEAD
 @import url(registrousuario.css);
+=======
+@import url(editardatosestilo.css);
+@import url(grid2.css);
+
+>>>>>>> 8548ead1b7fcdcf2ff049ef4c9a7c4eddb908f2b
 :root {
     --primary-color: #231f20;
     --secondary-color: #9a2020;
@@ -16,7 +22,7 @@
 }
 
 * {
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     padding: 0;
     margin: 0;
     
