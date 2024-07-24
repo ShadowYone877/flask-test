@@ -110,6 +110,6 @@ def registroForm():
         next = request.args.get('next', None)
         if next:
             return redirect(next)
-        return redirect(url_for('index'))
+        return redirect(url_for('login'))
     return render_template("registroForm.html",form=form)
 ~~~
