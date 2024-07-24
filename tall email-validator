@@ -1,0 +1,483 @@
+[33mcommit 98527d21d0f98e4e62dccee1e97851336db608b0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdevelopment[m[33m, [m[1;31morigin/development[m[33m)[m
+Merge: ac7d13c 51071dd
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Wed Jul 24 11:36:49 2024 -0600
+
+    update
+
+[33mcommit ac7d13c7e742e776095e5b71ee8eea42e2193c6e[m
+Merge: 13aa353 8548ead
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Wed Jul 24 11:34:01 2024 -0600
+
+    quiero hacer un pull
+
+[33mcommit 51071dd58553e5729a806cd599c6d3cbbc1cd8ec[m
+Merge: e38faa0 a1cdee3
+Author: rebelDevs <daganjv.pro@gmail.com>
+Date:   Wed Jul 24 10:56:10 2024 -0600
+
+    update files
+
+[33mcommit e38faa0cdbfd8eee22f953d7d721b4bb2bc7f6b2[m
+Author: rebelDevs <daganjv.pro@gmail.com>
+Date:   Wed Jul 24 10:50:05 2024 -0600
+
+    update flaskForm
+
+[33mcommit a1cdee3f36416af6f269d8f0060ebaabb8e475fa[m
+Merge: 35c485c 8548ead
+Author: Dagan Vega <daganjv.pro@gmail.com>
+Date:   Wed Jul 24 09:56:41 2024 -0600
+
+    Se agrego la vista de registro usuario y su CSS
+
+[33mcommit 35c485c85a68f07a2369986ad66067f0d7a175c2[m
+Merge: 7417eb8 afe6e0a
+Author: Dagan Vega <daganjv.pro@gmail.com>
+Date:   Wed Jul 24 09:49:59 2024 -0600
+
+    Se agrego la vista de registro usuario y su CSS
+
+[33mcommit 13aa3533cfd137f6568c26e116abcde41cddef2f[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Wed Jul 24 09:49:42 2024 -0600
+
+    grid 2
+
+[33mcommit 8548ead1b7fcdcf2ff049ef4c9a7c4eddb908f2b[m
+Merge: 2edbd22 33d2b61
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Wed Jul 24 05:21:42 2024 -0600
+
+    Adición de un nuevo ícono para y darte redireccionamiento y modificación a la vista evento(html y css)
+
+[33mcommit 2edbd2200c234de16c1091c09dc6744dadfc1395[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Wed Jul 24 05:17:36 2024 -0600
+
+    Adición de un nuevo ícono en el grid y darle redireccionamineto, modificación a la vista evento(html y css)
+
+[33mcommit 33d2b61a20caee44630074962bec1b2c0cd017e5[m
+Author: Josué F <alienxtrix@gmail.com>
+Date:   Wed Jul 24 02:39:09 2024 -0600
+
+    handbook forms with wtforms, app.config
+
+[33mcommit 79575f3a6d21a28d92b71c06fd5cad46a58aa2a5[m
+Merge: e97411b e233936
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Tue Jul 23 22:26:21 2024 -0600
+
+    agregar boton de registro de usuarios
+
+[33mcommit e97411bda6b0360edd5b31e82dc54e92cd54b328[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Tue Jul 23 21:52:37 2024 -0600
+
+    modificacion de grid 2 agregar status y icono search
+
+[33mcommit e2339364c5587ad2b050b1c511de3f4a0b986657[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Tue Jul 23 10:04:24 2024 -0600
+
+    Modificación en el archivo grid2(html y css) y actualización de la vista evento
+
+[33mcommit 83cdc1c1d9bc4c2e9ccfb0bde76dae5e8c658645[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Mon Jul 22 18:09:14 2024 -0600
+
+    vista de grird Jorge y yo
+
+[33mcommit e8774cdd7f103159d79406980e0aef46e7e9bd24[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Fri Jul 19 01:18:45 2024 -0600
+
+    Modificacion en los archivos evento(html y css) y editardatos(html y css)
+
+[33mcommit 6c0ac1ab4f6df18ab4c6c6b0091c7bff938a11a7[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Fri Jul 19 01:12:20 2024 -0600
+
+    Modificación main.py y header.html
+
+[33mcommit 78fc699410fcedf9b86b8ec7e77e4e0956d49e52[m
+Merge: 86e004e ec0ac5e
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Fri Jul 19 01:06:07 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit 86e004e8e4de5ec9c95d985aa3c8b9308e4eed69[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Fri Jul 19 01:03:22 2024 -0600
+
+    Creación de los archivos editardatos(html y css), admin(html y css) y cerrasesión(html), además de modificaciones a los archivos visualizardatusu(html y css),cambiarcontraseña(html y css), header(html), main.py y base.css
+
+[33mcommit ec0ac5ea789aa82e8a451005ae249c3df0352072[m
+Author: Isaac F <josuei.fm@iztapalapa.tecnm.mx>
+Date:   Thu Jul 18 16:15:45 2024 -0600
+
+    flujo de front en 3  vistas
+
+[33mcommit 38cb4a38fe187d7092f7fcdf3c14631e0c264439[m
+Merge: 923de52 76b89d6
+Author: Isaac F <josuei.fm@iztapalapa.tecnm.mx>
+Date:   Thu Jul 18 15:35:39 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit 923de52a24dd0fe7718e7cbd2edc051fe860266c[m
+Author: Isaac F <josuei.fm@iztapalapa.tecnm.mx>
+Date:   Thu Jul 18 15:35:32 2024 -0600
+
+    /
+
+[33mcommit 76b89d65332d7a3dd9c8b075a51f5bdc14654b9f[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Thu Jul 18 14:25:10 2024 -0600
+
+    Adición de los archivos visualizardatosu y grid2 (html)
+
+[33mcommit 4d678f8d8fe4eff0a1c11fab580a286d5da15756[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 18 14:18:46 2024 -0600
+
+    modificaciones de base_template
+
+[33mcommit f350430c6f6fc6420a45f1dda47c99b45eff47a9[m
+Merge: 6609b23 afe6e0a
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 18 13:45:21 2024 -0600
+
+    archivos bootstrap
+
+[33mcommit 6609b23e433a71ea7b0f8d597735cb8d605374d6[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 18 13:20:38 2024 -0600
+
+    archivos de bootstrap
+
+[33mcommit afe6e0a1e4bead785782cc51fb5f1b769cb3b183[m
+Author: rebelDevs <daganjv.pro@gmail.com>
+Date:   Thu Jul 18 13:13:23 2024 -0600
+
+    Se añadio el grid1
+
+[33mcommit 55a20faba3232a0faf1bc589729022f12ff1f074[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 18 09:47:10 2024 -0600
+
+    vista de comite integrando jinja y boton de regreso
+
+[33mcommit ebe88ca2920f2a09921bad33027e49500ce62003[m
+Merge: 64ae4a3 ba62d47
+Author: Isaac F <josuei.fm@iztapalapa.tecnm.mx>
+Date:   Thu Jul 18 09:29:40 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit ba62d479cb7856102e3c3f5dd03db0f5697da232[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Thu Jul 18 00:24:25 2024 -0600
+
+    Modificación de header(html y css) y modificación de datosu(html y css)
+
+[33mcommit fa98cfa85b0d12c8f3b34fe543725060a0864b0e[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Wed Jul 17 23:57:08 2024 -0600
+
+    revision de comite para cerrar ventana
+
+[33mcommit 31652a6d707e2537ab734b26bba381c69aa61406[m
+Merge: 69f7c1f 76f93a5
+Author: Dagan Vega <daganjv.pro@gmail.com>
+Date:   Wed Jul 17 10:13:28 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit 69f7c1fb0f9f3fe21a09823cbfbab2a167828612[m
+Author: Dagan Vega <daganjv.pro@gmail.com>
+Date:   Wed Jul 17 10:11:37 2024 -0600
+
+    Termine la vista de la pagina principal y el archivo CSS, me falta perfeccionar el header
+
+[33mcommit 76f93a535cfe5644919809cc8116cbcf04bc0da7[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Wed Jul 17 10:09:18 2024 -0600
+
+    Modificar header.css para evitar clases identicas
+
+[33mcommit c998aa9f51c4be02ce22ca32a0ae8e687e8923d2[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Wed Jul 17 09:39:51 2024 -0600
+
+    Agregar jinja2 a las vistas cambiarcontraseña y evento
+
+[33mcommit 64ae4a30a1e31b85da7e3200625acd9fb33b5dc3[m
+Merge: c622e3f bba632c
+Author: Isaac F <josuei.fm@iztapalapa.tecnm.mx>
+Date:   Wed Jul 17 09:15:55 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit bba632c68c5c54fc350f8331b82fc4674c4e3240[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Wed Jul 17 01:48:32 2024 -0600
+
+    Implementar jinja a la vista de login, modificar cosas de la vista comite tanto como html y css
+
+[33mcommit 22b623b3cedabbcc88e1ea6f3cf1dcbae734bbc1[m
+Merge: 748ae39 dd64f27
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Tue Jul 16 13:23:40 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit 748ae39ef41660f08fe1084a6b978342a5463956[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Tue Jul 16 13:23:09 2024 -0600
+
+    Agregar la vista comite (html,css)
+
+[33mcommit dd64f271cd198af39719ebb6c5abe34e2e0c74ea[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Tue Jul 16 13:20:44 2024 -0600
+
+    Implementar include, agregar archivos header(html y css)
+
+[33mcommit 2b210813bdbab8d3a6662ac72d305e89b8caa638[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Tue Jul 16 12:21:00 2024 -0600
+
+    Implementar jinja2 a la vista datosusuario, creación de base_template
+
+[33mcommit c622e3f572f544583367cb51c071653207838df6[m
+Merge: 7febf6c 6df33e6
+Author: Isaac F <josuei.fm@iztapalapa.tecnm.mx>
+Date:   Tue Jul 16 03:16:37 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit 7febf6cada9b9a08a9bfe6c93b526da9553d56e2[m
+Author: Isaac F <josuei.fm@iztapalapa.tecnm.mx>
+Date:   Tue Jul 16 03:15:02 2024 -0600
+
+    cambios f
+
+[33mcommit 6df33e6ea0a7243189aee707bd6ea06c679236f4[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Mon Jul 15 03:11:47 2024 -0600
+
+    Versión 22
+
+[33mcommit bc694abd7912974a846011f691faeb205bf099b5[m
+Merge: 2d270e4 859c2ce
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Thu Jul 11 20:27:00 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit 2d270e40304db1ff737afd833533cd352aaaca9a[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Thu Jul 11 20:26:45 2024 -0600
+
+    Versión 21
+
+[33mcommit 859c2ce76e526ed873e2066f66468eb8fd070314[m
+Merge: cfd3a1a a9c2cad
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 11 13:58:34 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit cfd3a1ae305226004105e926159830ace1c5f960[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 11 13:54:00 2024 -0600
+
+    version 20
+
+[33mcommit a9c2cad2384364e7cff9af3ae001e44d7f7d47d6[m
+Author: Jason Rojas <jasonrojasyy@gmail.com>
+Date:   Thu Jul 11 13:52:44 2024 -0600
+
+    version19
+
+[33mcommit ccec56599ff91722f8027cdad4e18878e7652fc1[m
+Author: Dagan Vega <daganjv.pro@gmail.com>
+Date:   Thu Jul 11 13:49:43 2024 -0600
+
+    Version 17
+
+[33mcommit 0c02f32c575ececa7e70f8342257b1a580712abf[m
+Author: Jason Rojas <jasonrojasyy@gmail.com>
+Date:   Thu Jul 11 13:47:53 2024 -0600
+
+    version 17
+
+[33mcommit dbf9f081cbe6c7ea0b635b316e309648dc9dcdad[m
+Merge: bb4b588 f5cd1e4
+Author: Jason Rojas <jasonrojasyy@gmail.com>
+Date:   Thu Jul 11 13:45:13 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit f5cd1e4b4ec407df0be0f9cf24788652cac747a5[m
+Merge: c6588e0 ad31cf6
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 11 13:44:18 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit c6588e099e8142bbcb4aff50e89185db82adafdd[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 11 13:43:57 2024 -0600
+
+    version 16
+
+[33mcommit bb4b58841996f1edbd40df457171776d6ff4e104[m
+Merge: 662a149 ad31cf6
+Author: Jason Rojas <jasonrojasyy@gmail.com>
+Date:   Thu Jul 11 13:43:42 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit ad31cf6956613d5eea31c83176b7c069dec2264d[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Thu Jul 11 13:41:55 2024 -0600
+
+    Version 15
+
+[33mcommit 662a149d3c188523ce01297b70d45c8fbf832580[m
+Merge: 21bb86a 4a6ce8d
+Author: Jason Rojas <jasonrojasyy@gmail.com>
+Date:   Thu Jul 11 13:32:58 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit 4a6ce8d578ce8f747a2d90b0df973ee8514e8b3f[m
+Merge: 5572798 2aa2c74
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 11 13:30:26 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit 21bb86a28a5ad9965331ad4719165516557e8ea4[m
+Merge: a3b9dce 2aa2c74
+Author: Jason Rojas <jasonrojasyy@gmail.com>
+Date:   Thu Jul 11 13:27:53 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit a3b9dce5f478bf54e91eedd1d0e0c7480f342c96[m
+Author: Jason Rojas <jasonrojasyy@gmail.com>
+Date:   Thu Jul 11 13:26:15 2024 -0600
+
+    version 11
+
+[33mcommit 2aa2c74c9c620bdd73946cd4d4c60e1ae501d01e[m
+Author: Dagan Vega <daganjv.pro@gmail.com>
+Date:   Thu Jul 11 13:24:20 2024 -0600
+
+    Version 10
+
+[33mcommit 5572798ab4741ee80e305820169481bcce5c9311[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 11 13:24:00 2024 -0600
+
+    version 9
+
+[33mcommit 2d35a02cb1f6baf9d5f045843a0be115d6a14ade[m
+Author: Isaac F <josuei.fm@iztapalapa.tecnm.mx>
+Date:   Thu Jul 11 13:21:54 2024 -0600
+
+    update files
+
+[33mcommit a57e471e968c113432ef3122572fc68048e04ff8[m
+Author: Jason Rojas <jasonrojasyy@gmail.com>
+Date:   Thu Jul 11 13:15:54 2024 -0600
+
+    version 8
+
+[33mcommit 739fcb3bb7a9b2ae966bc147381bd06b00fa3aaf[m
+Merge: b3b8ef1 305cde1
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 11 13:11:40 2024 -0600
+
+    version 6
+
+[33mcommit b3b8ef15880cdec7dcbe6d4162e64968acc75450[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 11 13:10:44 2024 -0600
+
+    version 6
+
+[33mcommit 305cde1b0531b4af9d5864649d319bb6fe123e8b[m
+Merge: ef7d82b 181dad6
+Author: Dagan Vega <daganjv.pro@gmail.com>
+Date:   Thu Jul 11 13:09:50 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit ef7d82bbc844d52a512b7aebe788bb99ba4a3deb[m
+Merge: 7cf2d9e 96c1199
+Author: Dagan Vega <daganjv.pro@gmail.com>
+Date:   Thu Jul 11 13:07:06 2024 -0600
+
+    Cambio
+
+[33mcommit 181dad60ea60a2e499b573a6b1c8f8c3635bce2d[m
+Merge: 27826f9 9b5c222
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 11 13:04:04 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit 27826f9cba4752f38aa9bbcdcb884403ad923535[m
+Author: Regina Diaz <regval3307@gmail.com>
+Date:   Thu Jul 11 13:02:17 2024 -0600
+
+    version 5
+
+[33mcommit 9b5c222d5725a407727200353c40a330d8a231a1[m
+Merge: 64d798f 96c1199
+Author: Jason Rojas <jasonrojasyy@gmail.com>
+Date:   Thu Jul 11 12:54:17 2024 -0600
+
+    Merge branch 'development' of github.com:ShadowYone877/flask-test into development
+
+[33mcommit 7417eb889a68ae3863dd2514a32f917f51b6d477[m
+Author: Dagan Vega <daganjv.pro@gmail.com>
+Date:   Thu Jul 11 12:49:57 2024 -0600
+
+    ee
+
+[33mcommit 96c1199787cc9821da2aba2babfbd52a8a77c91d[m
+Author: Isaac F <josuei.fm@iztapalapa.tecnm.mx>
+Date:   Thu Jul 11 12:45:41 2024 -0600
+
+    espacio
+
+[33mcommit 7cf2d9e2dd719bf7ab2f28fb83e4b7656b3a6f0d[m
+Author: Dagan Vega <daganjv.pro@gmail.com>
+Date:   Thu Jul 11 12:44:34 2024 -0600
+
+    Añadido de pestaña de inicio
+
+[33mcommit 64d798ffde421b595687179495bfff665d605f78[m
+Author: Jason Rojas <jasonrojasyy@gmail.com>
+Date:   Thu Jul 11 12:38:59 2024 -0600
+
+    version4
+
+[33mcommit b8e807170696bd43465fc91dce79c631bee7c6e0[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Thu Jul 11 11:25:51 2024 -0600
+
+    cssactualizado
+
+[33mcommit d84f30c0869d455b336987234fd8434855886414[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Jorge <yonemotoh.jorgeg@gmail.com>
+Date:   Thu Jul 11 10:52:52 2024 -0600
+
+    proyectoincial
