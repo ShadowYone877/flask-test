@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
+app = Flask(__name__)
+app.config['SECRET_KEY'] = '7110c8ae51a4b5af97be6534caef90e4bb9bdcb3380af008f90b23a5d1616bf319bc298105da20fe'
 
 @app.route("/CambiarContraseña")
 def CambiarContraseña():
@@ -49,6 +51,10 @@ def editarDatos():
 @app.route("/Admin")
 def mostrarAdmin():
     return render_template("admin.html")
+
+@app.route("/registroForm")
+def registroForm():
+    return render_template("registroForm.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
