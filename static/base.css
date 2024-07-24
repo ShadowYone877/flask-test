@@ -1,7 +1,14 @@
 @import url(login.css);
+@import url(datosuestilo.css);
+@import url(comite.css);
+@import url(CambiarContraseñaestilo.css);
+@import url(eventoestilo.css);
+@import url(header.css);
+@import url(inicio.css);
+@import url(registrousuario.css);
 :root {
     --primary-color: #231f20;
-    --secondary-color: rgba(172, 22, 64, 0.918);
+    --secondary-color: #9a2020;
     --gray_base-color: #e1e1e1;
     --form_card-color1: #fbfbfb;
     --text_box-color: #f9cbd0;

@@ -1,0 +1,124 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	--primary-color:#8b0000;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .content { 
+	min-height: 80px;
+	background: var(--primary-color);
+  }
+  .menu {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-logo {
+  height: 15px;
+}
+.logo {
+  font-size: 50px;
+  color: #ffff;
+  text-transform: uppercase;
+}
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #dedede;
+  display: block;
+  font-weight: bold;
+}
+.menu .navbar ul li a:hover {
+  color: #ffff;
+}
+#menu {
+  display: none;
+}
+.menu-icono {
+  width: 25px;
+}
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.parra p {
+	color: #ffff;
+
+}
+.texto {
+  color: #8b0000;
+
+} /*.header{
+  height: 110vh !important;
+  background: url(mi.jpg)no-repeat center;
+  background-size: cover;
+} */
+.cuadrado{
+	background-color: #8b0000;
+border: 2px solid rgb(rgb(83, 0, 0), rgb(108, 2, 2), rgb(92, 5, 5));
+padding: 5px 5px;
+border-radius: 15px;
+width: 900px;
+height: 500px;
+position: relative;
+left: 350px;
+top: 100px;
+display: flex;
+flex-direction: row;
+}
+
+.cuadrado p{
+  color: #ffffff;
+  width: 900px;
+height: 500px;
+position: relative;
+left: 350px;
+padding: 5px;
+margin: 5px;
+top: 35px
+}
+
+.municipio{
+  padding: 5px 5px;
+  border-radius: 15px;
+  width: 100px;
+  height: 50px;
+  position: relative;
+  left: 10px;
+  top: 100px;
+  display: flex;
+  flex-direction: row;
+  }
+
+.cuadrad .Municipio{
+  width: 70px;
+  height: 50px;
+  position: relative;
+  left: 70px;
+  top: 5px;
+  margin: 5px;
+}
+.tres select{
+  width: 70px;
+  height: 50px;
+  position: relative;
+  left: 350px;
+  top: 5px;
+  margin: 5px;
+}

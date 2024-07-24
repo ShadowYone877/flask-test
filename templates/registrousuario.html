@@ -1,0 +1,110 @@
+{% extends "base_template.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Usuario</title>
+  </head>
+  <body>
+    <!-- * Barra de navegacion -->
+    <header>
+      <nav class="navbarInicio">
+        <strong>
+          <a href="">Contacto</a>
+          <a href="">Militantes</a>
+          <a href="">Comité</a>
+          <a href="">Inicio</a>
+        </strong>
+      </nav>
+    </header>
+    <form action="post">
+    <section class="ruGral">
+        <!-- ! Nombre, apellido paterno, materno, -->
+            <section class="registroUsuario">
+                  <strong><h3>Registro de usuario</h3></strong>
+              <fieldset>
+                <label>
+                    <p>Nombre:</p>
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    <p>Apellido paterno:</p>
+                    <input type="text" name="lastname1" required>
+                </label>
+                <label>
+                    <p>Apellido materno:</p>
+                    <input type="text" name="lastname2" required>
+                </label>
+                <label>
+                    <p>Celular:</p>
+                    <input type="tel" name="cell" required>
+                </label>
+                <label>
+                    <p>Telefono</p>
+                    <input type="tel" name="tel">
+                </label>
+                <label>
+                    <p>Correo:</p>
+                    <input type="email" name="email" required>
+                </label>
+                <label>
+                    <p>Sección:</p>
+                    <input type="text" name="section" required>
+                </label>
+                <label>
+                    <p>Distrito federal:</p>
+                    <input type="text" name="df" required>
+                </label>
+                <label>
+                    <p>Estado:</p>
+                    <input type="text" name="state" required>
+                </label>
+                <label>
+                    <p>Distrito local:</p>
+                    <input type="text" name="dl" required>
+                </label>
+                <label>
+                    <p>Grado:</p>
+                    <input type="text" name="grado" required>
+                </label>
+                <label>
+                    <p>Militante:</p>
+                    <input type="text" name="militante" required>
+                </label>
+              </fieldset>
+            </section>
+            <section class="registroUsuario2">
+                <fieldset>
+                    <label>
+                        <p>Calle:</p>
+                        <input type="text" name="calle" required>
+                    </label>
+                    <label>
+                        <p>N° Exterior:</p>
+                        <input type="number" name="exNumber" required>
+                    </label>
+                    <label>
+                        <p>N° Interior:</p>
+                        <input type="number" name="inNumber">
+                    </label>
+                    <label>
+                        <p>Colonia:</p>
+                        <input type="text" name="col" required>
+                    </label>
+                    <label>
+                        <p>Municipio/Alcaldia:</p>
+                        <input type="text" name="municipio" required>
+                    </label>
+                    <label>
+                        <p>Codigo postal:</p>
+                        <input type="number" name="cp" required>
+                    </label>
+                </fieldset>
+                <input type="submit" value="Aceptar">
+            </section>
+          </form>
+  </body>
+</html>
+{% endblock %}

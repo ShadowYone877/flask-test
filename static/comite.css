@@ -1,0 +1,143 @@
+.contenedor_vista{
+    margin-top: 75px;
+    position: relative;
+    left: 500px;
+    top: 60px;
+  }
+  
+.contenedor_vista{ 
+    border-radius:35px;
+    width: 300%; /*ancho del elemento*/
+    height: 500px;
+    max-width: 500px;
+    background-color: var(--secondary-color);
+    padding: 15px; /*es el espacio que existe entre el texto y recuadro*/
+    align-items: center; 
+  }
+
+.fa-solid.fa-xmark{
+  color: #e1e1e1;
+  position: absolute; left:455px; top:23px;
+}
+
+.word{
+  text-align: center;
+  color: #e1e1e1;
+}
+
+input[type=text] {  
+  background-color: var(--primary-color);
+  width: 42%;
+  height: 10px;
+  max-width: 300px;
+  background-color:#e1e1e1;  
+  padding: 15px;
+  border-radius:25px;
+  position: relative; left: 10px; top: 20px; /*posicion static*/
+}
+
+input[type=file]{
+  width: 40%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;  
+  position: absolute; left: 270px; top: 111px;/* posicion que no reserva ningun espacio*/
+}
+
+input[type=teex]{
+  width: 40%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;  
+  position: absolute; left: 22px; top: 180px;
+}
+
+input[type=tex]{
+  width: 40%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;  
+  position: absolute; left: 270px; top: 165px;
+  margin-top: 15px;
+}
+
+input[type=te]{
+  width: 40%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;  
+  position: absolute; left: 22px; top: 305px;
+  margin-top: 15px;
+}
+
+input[type=date]{
+  width: 40%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;  
+  position: absolute; left: 22px; top: 235px;
+  margin-top: 15px;
+}
+
+input[type=time]{
+  width: 40%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;  
+  margin-top: 15px;
+  position: absolute; left: 270px; top: 235px;
+}
+
+input[type=number]{
+  width: 40%;
+  height: 10px;
+  max-width: 300px;
+  background: #e1e1e1;
+  padding: 15px;
+  border-radius:25px;  
+  margin-top: 15px;
+  position: absolute; left: 270px; top: 305px;
+}
+
+input[type=button]{
+  width: 23%;
+  height: 35px;
+  border-radius:25px;  
+  background-color: var(--secondary-color);
+  position: absolute; left: 80px; top: 406px;
+  z-index: 0;
+}
+
+.fas.fa-chevron-right{
+  color:#e1e1e1;
+  position: absolute; left: 411px; top: 415px;
+  z-index: 1;
+}
+
+input[type=butt]{
+  text-align: center;
+  width: 23%;
+  height: 35px;
+  border-radius:25px;  
+  background-color: var(--secundary-color);
+  position: absolute; left: 318px; top: 406px;
+  z-index: 0;
+}
+
+.fas.fa-chevron-left{
+  color:#e1e1e1;
+  position: absolute; left: 90px; top: 415px;
+  z-index: 1;
+}

@@ -1,0 +1,96 @@
+{% extends "base_template.html" %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Usuario</title>
+  </head>
+  <body>
+    <!-- * Barra de navegacion -->
+    <header>
+      <nav class="navbarInicio">
+        <strong>
+          <a href="">Contacto</a>
+          <a href="">Militantes</a>
+          <a href="">Comité</a>
+          <a href="">Inicio</a>
+        </strong>
+      </nav>
+    </header>
+    <section class="ruGral">
+        <section class="registroUsuario">
+          <h3>Registro de usuario</h3>
+          <fieldset>
+              <p>Nombre:</p>
+              <input type="text" required/>
+          </fieldset>
+          <fieldset>
+              <p>Celular:</p>
+              <input type="text" />
+          </fieldset>
+          <fieldset>
+              <p>Telefono:</p>
+              <input type="text" />
+          </fieldset>
+          <fieldset>
+              <p>Correo:</p>
+              <input type="text" />
+          </fieldset>
+          <fieldset>
+              <p>Sección:</p>
+              <input type="text" />
+          </fieldset>
+          <fieldset>
+              <p>Distrito federal:</p>
+              <input type="text" />
+          </fieldset>
+          <fieldset>
+              <p>Estado:</p>
+              <input type="text" />
+          </fieldset>
+          <fieldset>
+              <p>Distrito local</p>
+              <input type="text" />
+          </fieldset>
+          <fieldset>
+              <p>Grado:</p>
+              <input type="text" />
+          </fieldset>
+          <fieldset>
+              <p>Militante:</p>
+              <input type="text" />
+          </fieldset>
+        </section>
+        <section class="registroUsuario2">
+            <fieldset>
+                <p>Calle:</p>
+                <input type="text" />
+            </fieldset>
+            <fieldset>
+                <p>N° Exterior:</p>
+                <input type="text" />
+            </fieldset>
+            <fieldset>
+                <p>N° Interior:</p>
+                <input type="text" />
+            </fieldset>
+            <fieldset>
+                <p>Colonia:</p>
+                <input type="text" />
+            </fieldset>
+            <fieldset>
+                <p>Municipio/Alcaldia:</p>
+                <input type="text" />
+            </fieldset>
+            <fieldset>
+                <p>Codigo postal:</p>
+                <input type="text" />
+            </fieldset>
+            <button class="sigButton">Aceptar</button>
+        </section>
+    </section>
+  </body>
+</html>
+{% endblock %}
