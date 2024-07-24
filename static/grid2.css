@@ -1,13 +1,45 @@
-.container_grid{
-    padding: 160px;
+.container_grid {
+    padding: 40px;
+    column-gap: 50px;
+    display: grid;
+    grid-gap: 1px;
+
 }
 
 .col-sm{
     width: 100%;
     padding: 5px;
     display:grid;
-    color: blue;
+    color:#ffffff;
     justify-content: space-around;
     align-content: center;
     padding: 6px;
+}
+.row{
+    background-color: var(--secondary-color);
+}
+
+.fa-solid.fa-magnifying-glass{
+    color: #f2f2f2;
+    padding: 4px;
+
+
+}
+
+.fa-solid.fa-pen-to-square{
+    color: #f2f2f2;
+    padding: 4px;
+
+    
+}
+
+.fa-solid.fa-trash{
+    color: #f2f2f2;
+    padding: 4px;
+}
+.eliminar{
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
