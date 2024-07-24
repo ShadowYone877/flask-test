@@ -6,77 +6,142 @@
 {% endblock %}
 {% block content %}
 <main>
-    <div class="contenedor_evento">
-
-        <div class="evento"></div>
-        <p class="num_exterior">Num. exterior</p>
-        <p class="municipio_alcaldia">Municipio/Alcaldía</p>
-        <p class="porcentaje">Porcentaje realizado</p>
-        <p class="fecha_final">Fecha final de evento</p>
-        <p class="num_interior">Num.interior</p>
-        <p class="lona">. Lona</p>
-        <p class="volantes ">. Volantes</p>
-        <p class="reunion">. Reunion comité</p>
-        <input class="ingresar_cp" type="text" name="ingresar cp" id="ingresar cp" placeholder="Ejem-CP.87902">
-        <input class="ingresar_calle" type="text" name="ingresar calle" id="ingresar calle"
-            placeholder="Ingrese su calle">
-        <p class="calle">Calle</p>
-        <p class="cp">Código postal</p>
-        <input class="ingresar_estado" type="text" name="ingresar estado" id=" ingresar estado"
-            placeholder="Seleccione una opción">
-        <input class="ingresar_alcaldia" type="text" name="ingresar alcaldia" id="ingresar alcaldia"
-            placeholder="Ingrese su Alcaldía/Municipio">
-        <input class="ingresar_num_exterior" type="number" name="num exterior" id="no exterior">
-        <input class="ingresar_num_interior" type="text" name="num interior" id="num interior">
-        <p class="evento2">Evento</p>
-        <input class="ingresar_fecha_inicial" type="date" name="ingresar inicio" id="ingresar inicio">
-        <input class="ingresar_fecha_final" type="date" name="ingresar final" id="ingresar final">
-        <div class="seleccionar_menu">
-            <!--<div clas="seleccionar">
-                <span>Selecione el porcentaje</span>
-                <i class="fa-solid fa-angle-down"></i>
+    <section class="evento" id="informacion">
+        <div id="cerrar"><a href="javascript:void(0)" onclick="cerrarEvento()"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+        <span class="nombre">Evento</span>
+        <ul class="utilidades">
+            <li>Lona</li>
+            <li>Volantes</li>
+            <li>Reunión comité</li>
+        </ul>
+        <div class="columna1">
+            <div class="fecha_inicial">
+                <label>Fecha inicial del evento</label>
+                <input type="date" required>
+            </div>
+            <div class="fecha_final">
+                <label>Fecha final del evento</label>
+                <input type="date" required>
             </div>
             <div class="porcentajes">
-                <div class="opcion">25%</div>
-                <div class="opcion">50%</div>
-                <div class="opcion">75%</div>
-                <div class="opcion">100%</div>
-            </div>-->
-            <label for="cars">Choose a car:</label>
-
-            <select id="cars">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                <option value="audi">Audi</option>
-            </select>
+                <div class="select_menu">
+                    <div class="select">
+                        <span>Porcentaje realizado</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="options_list">
+                        <div class="option">25%</div>
+                        <div class="option">50%</div>
+                        <div class="option">75%</div>
+                        <div class="option">100%</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <input class="ingresar_porcentaje" type="number" name="ingresar porcentaje" id="porcentaje">
-        <p class="fecha_inicial">Fecha inicial de evento</p>
-        <p class="lugar">Lugar</p>
-        <p class="estado">Estado </p>
-    </div>
+        <span class="lugar">Lugar</span>
+        <div class="columna2">
+            <div class="codigo_postal">
+                <label>Código postal</label>
+                <input type="text" required>
+            </div>
+            <div class="calle">
+                <label>Calle</label>
+                <input type="text" required>
+            </div>
+            <div class="estados">
+                <div class="select_menu2">
+                    <div class="select2">
+                        <span>Seleccione su estado</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="options_list2">
+                        <div class="option2">Aguascalientes</div>
+                        <div class="option2">Baja California</div>
+                        <div class="option2">Baja California Sur</div>
+                        <div class="option2">Campeche</div>
+                        <div class="option2">Chiapas</div>
+                        <div class="option2">Chihuahua</div>
+                        <div class="option2">Ciudad de México</div>
+                        <div class="option2">Coahuila</div>
+                        <div class="option2">Colima</div>
+                        <div class="option2">Durango</div>
+                        <div class="option2">Estado de México</div>
+                        <div class="option2">Guanajuato</div>
+                        <div class="option2">Guerrero</div>
+                        <div class="option2">Hidalgo</div>
+                        <div class="option2">Jalisco</div>
+                        <div class="option2">Michoacán</div>
+                        <div class="option2">Morelos</div>
+                        <div class="option2">Nayarit</div>
+                        <div class="option2">Nuevo León</div>
+                        <div class="option2">Oaxaca</div>
+                        <div class="option2">Puebla</div>
+                        <div class="option2">Querétaro</div>
+                        <div class="option2">Quintana Roo</div>
+                        <div class="option2">San Luis Potosí</div>
+                        <div class="option2">Sinaloa</div>
+                        <div class="option2">Sonora</div>
+                        <div class="option2">Tabasco</div>
+                        <div class="option2">Tamaulipas</div>
+                        <div class="option2">Tlaxcala</div>
+                        <div class="option2">Veracruz</div>
+                        <div class="option2">Yucatán</div>
+                        <div class="option2">Zacatecas</div>
+                    </div>
+                </div>
+            </div>
+            <div class="municipio_alcaldia">
+                <label>Municpio/Alcaldía</label>
+                <input type="text" required>
+            </div>
+            <div class="num_exterior">
+                <label>Num. exterior</label>
+                <input type="text" required>
+            </div>
+            <div class="num_interior">
+                <label>Num. interior</label>
+                <input type="text" required>
+            </div>
+        </div>
+    </section>
     <script>
+        const select = document.querySelector(".select");
+        const options_list = document.querySelector(".options_list");
+        const options = document.querySelector(".option");
 
-        function cerrarEvento() {
-            document.getElementById("formulario").style.display = "none";
-        }
-    </script>
-    <script>
-        const select = document.querySelector(".seleccionar");
-        const porcentajes = document.querySelector(".porcentajes");
-        const opciones = document.querySelector(".opcion");
         select.addEventListener("click", () => {
-            porcentajes.classList.toggle("active");
+            options_list.classList.toggle("active");
             select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
         });
-        optiones.forEach((opcion) => {
-            opcion.addEventListener("click", () => {
-                optiones.forEach((opcion) => { opcion.classList.remove('seleccionar') });
-                select.querySelector("span").innerHTML = opcion.innerHTML;
-                opcion.classList.add("seleccionar");
-                porcentajes.classList.toggle("active");
+
+        options.forEach((option) => {
+            option.addEventListener("click", () => {
+                options.forEach((option) => { option.classList.remove('selected') });
+                select.querySelector("span").innerHTML = option.innerHTML;
+                option.classList.add("selected");
+                options_list.classList.toggle("active");
                 select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+            });
+        });
+    </script>
+    <script>
+        const select2 = document.querySelector(".select2");
+        const options_list2 = document.querySelector(".options_list2");
+        const options2 = document.querySelector(".option2");
+
+        select2.addEventListener("click", () => {
+            options_list2.classList.toggle("active");
+            select2.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+        });
+
+        options.forEach((option2) => {
+            option2.addEventListener("click", () => {
+                options.forEach((option2) => { option2.classList.remove('selected') });
+                select2.querySelector("span").innerHTML = option2.innerHTML;
+                option2.classList.add("selected");
+                options_list2.classList.toggle("active");
+                select2.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
             });
         });
     </script>

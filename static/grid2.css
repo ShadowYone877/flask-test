@@ -28,8 +28,6 @@
 .fa-solid.fa-pen-to-square{
     color: #f2f2f2;
     padding: 4px;
-
-    
 }
 
 .fa-solid.fa-trash{
@@ -55,4 +53,9 @@
     left:80%;
     top: 15%;
     color: var(--white);
+}
+
+.fa-solid.fa-book{
+    color: var(--white);
+    padding: 4px;
 }

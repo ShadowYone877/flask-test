@@ -8,13 +8,13 @@
         <li>
             <a herf="#">Datos del Usuario</a>
             <ul class="menu_vertical">
-                <li><a href="{{url_for('mostrarDatosU')}}" onclick="mostrarDatosU()">Visualizar datos</a></li>
-                <li><a href="{{url_for('CambiarContraseña')}}" onclick="mostrarContraseña()">Cambiar Contraseña</a></li>
+                <li><a href="{{url_for('mostrarDatosU')}}">Visualizar datos</a></li>
+                <li><a href="{{url_for('CambiarContraseña')}}">Cambiar Contraseña</a></li>
                 <li><a href="{{url_for('editarDatos')}}" onclick="mostrarEdicion()">Editar datos</a></li>
             </ul>
         </li>
         <li><a href="{{url_for('comite')}}" onclick="mostrarComite()">Comite</a></li>
-        <li><a href="{{url_for('evento')}}" onclick="mostrarEvento()">Evento</a></li>
+        <li><a href="{{url_for('evento')}}">Evento</a></li>
         <li><a href="{{url_for('mostrarAdmin')}}" onclick="mostrarComite() ">Admin</a></li>
         <li><a href="{{url_for('cerrarSesion')}}" onclick="mostrarLogOut()">Cerrar sesión</a></li>
     </ul>
