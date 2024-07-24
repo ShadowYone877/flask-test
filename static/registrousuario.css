@@ -14,6 +14,12 @@
     padding: 16px;
     height: max-content;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.registroUsuario h3 {
+    grid-column-start:  1;
+    grid-column-end: -1;
 }
 
 .registroUsuario h3 {
@@ -31,11 +37,12 @@
     border-radius: 8px;
     padding: 16px;
     height: 16px;
-    width: auto;
+    width:max-content;
     gap: 10px;
     margin: 10px;
     border: none;
     font-size: 14px;
+    
 }
 
 .ruGral p {

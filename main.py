@@ -70,5 +70,9 @@ def registroForm():
 def registrousuario():
     return render_template("registrousuario.html")
 
+@app.route("/pendiente_comite")
+def pendientecomite():
+    return render_template("pendienteComite.html")
+
 if __name__ == '__main__':
     app.run(debug=True)
