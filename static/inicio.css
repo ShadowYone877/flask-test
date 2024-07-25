@@ -26,11 +26,19 @@
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
-    font-size: 20px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
     cursor: pointer;
+    height: 50px;
+    width: 150px;
+}
+
+.secButton a{
+    color: var(--white);
+    text-decoration: none;
 }
 
 button:active {
