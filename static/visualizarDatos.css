@@ -7,15 +7,35 @@
 .datos {
     display: grid;
     grid-template-columns: 1fr;
-    height: 90vh;
-    gap: 16px;
+    height: max-content;
+    width: 30%;
+    gap: 3px;
+    background-color: var(--gray_base-color);
+    padding: 16px;
+    border-radius: 6px;
+    margin: 20px 30px;
+}
+
+.datos h3 {
+    margin: 10px;
 }
 
 .datos p {
-    background-color: var(--gray_base-color);
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    padding: 1px;
+    margin: 1px;
+}
+
+.datos button {
+    position: relative;
+    left: 58%;
+    font-size: 14px;
+    margin: 2px;
+    padding: 4px;
+}
+
+.secP {
+    color: var(--gray_font-color);
+}
+
+.visualizarDatos {
 }

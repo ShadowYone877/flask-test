@@ -24,7 +24,7 @@
 
 
 .ruGral input{
-    background-color: var(--inputs-color);
+    background-color: var(--gray_secondary-color);
     display: grid;
     position: static;
     border-radius: 8px;
