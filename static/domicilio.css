@@ -1,0 +1,63 @@
+.ruGralDomicilio {
+    padding: 16px;
+    padding-top: 116px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 375px;
+    grid-auto-flow: dense;
+    gap: 16px;
+}
+
+.ruGralDomicilio section {
+    background-color: var(--gray_base-color);
+    border-radius: 6px;
+    padding: 16px;
+    height: max-content;
+}
+
+.addDomicilio h3 {
+    grid-column-start: span 2;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+
+.ruGralDomicilio input{
+    background-color: var(--inputs-color);
+    display: grid;
+    position: static;
+    border-radius: 8px;
+    padding: 16px;
+    height: 16px;
+    width:max-content;
+    gap: 10px;
+    margin: 10px;
+    border: none;
+    font-size: 14px;
+    
+}
+
+.ruGralDomicilio p {
+    margin: 1px;
+    color: black;
+}
+
+.ruGralDomicilio input[type=submit] {
+    text-align: center;
+    height: max-content;
+    background-color: var(--secondary-color);
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 420px;
+}
+
+.formularioAddDomilio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+

@@ -8,6 +8,8 @@
 @import url(registrousuario.css);
 @import url(editardatosestilo.css);
 @import url(grid2.css);
+@import url(domicilio.css);
+@import url(visualizarDatos.css);
 
 :root {
     --primary-color: #231f20;

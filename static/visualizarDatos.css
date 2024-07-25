@@ -1,0 +1,21 @@
+.secVisualizar {
+    display: flex;
+    justify-content:left;
+    padding: 16px;
+}
+
+.datos {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 90vh;
+    gap: 16px;
+}
+
+.datos p {
+    background-color: var(--gray_base-color);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}

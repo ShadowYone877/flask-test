@@ -74,6 +74,10 @@ def registrousuario():
 def datos():
     return render_template("visualizarDatos.html")
 
+@app.route("/añadir_domicilio")
+def adddomicilio():
+    return render_template("domicilio.html")
+
 @app.route("/pendiente_comite")
 def pendientecomite():
     return render_template("pendienteComite.html")
