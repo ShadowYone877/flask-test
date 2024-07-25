@@ -15,14 +15,13 @@
             <li>Volantes</li>
             <li>Reunión comité</li>
         </ul>
-        <div class="columna1">
             <div class="fecha_inicial">
                 <label>Fecha inicial del evento</label>
-                <input type="date" required>
+                <input class="input_format" type="date" required>
             </div>
             <div class="fecha_final">
                 <label>Fecha final del evento</label>
-                <input type="date" required>
+                <input class="input_format" type="date" required>
             </div>
             <div class="porcentajes">
                 <div class="select_menu">
@@ -35,7 +34,7 @@
                         <div class="option">50%</div>
                         <div class="option">75%</div>
                         <div class="option">100%</div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -43,7 +42,7 @@
         <div class="columna2">
             <div class="codigo_postal">
                 <label>Código postal</label>
-                <input type="text" required>
+                <input class="input_format" type="text" required>
             </div>
             <div class="calle">
                 <label>Calle</label>
@@ -144,6 +143,11 @@
                 select2.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
             });
         });
+    </script>
+    <script>
+        function cerrarEvento() {
+        document.getElementById("informacion").style.display = "none";
+        }
     </script>
 </main>
 {% endblock %}
