@@ -24,6 +24,10 @@ def inicio():
 def registro():
     return render_template("Registro.html")
 
+@app.route("/sesion_comite")
+def sesion_comite():
+    return render_template("sesion_comite.html")
+
 @app.route("/evento")
 def evento():
     return render_template("evento.html")

@@ -1,0 +1,107 @@
+
+.cuadro_principal_sesion{
+    width: 800px;
+    height: 500px;
+    background:#e1e1e1;
+    opacity: 1;
+    position: absolute;
+    top: 120px;
+    left: 350px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    overflow: hidden;
+  }
+  .parrafo_sesion {
+    width: 244px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 36px;
+    left: 350px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+  }
+  .identificacion_de_comite {
+    width: 200px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 150px;
+    left:100px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  .Direccion_de_sesion{
+    width: 200px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 150px;
+    left:500px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+  .Nombre_sesion{
+    width: 200px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 240px;
+    left:300px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+ .inicio_sesion{
+    width: 200px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 350px;
+    left:100px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+ }
+ .fin_sesion{
+    width: 200px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 350px;
+    left:520px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+ }

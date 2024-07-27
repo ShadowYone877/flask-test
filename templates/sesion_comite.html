@@ -1,0 +1,19 @@
+{% extends "base_template.html" %}
+{% block header %}
+<header>{% include "header.html" %}</header>
+<link rel="stylesheet" href="{{ url_for('static', filename='sesion_comite.css') }}">
+{% endblock %}
+{% block content %}
+<body>
+    
+    <div class="cuadro_principal_sesion">
+     
+    <span class="parrafo_sesion">SESION </span>
+    <input class="identificacion_de_comite" type="text" placeholder="Identificacion de comite ">
+    <input class="Direccion_de_sesion" type="text" placeholder="Direccion sesion">
+    <input class="Nombre_sesion" type="text" placeholder="Nombre">
+    <input class="inicio_sesion" type="datetime-local" placeholder="Hora de inicio de la sesion">
+    <input class="fin_sesion" type="datetime-local" placeholder="Hora final de la sesion ">
+    </div>
+</body>
+{% endblock %}

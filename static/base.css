@@ -11,7 +11,7 @@
 @import url(domicilio.css);
 @import url(visualizarDatos.css);
 @import url(asignar_comite.css);
-
+@import url(sesion_comite.css);
 :root {
     --primary-color: #231f20;
     --secondary-color: #9a2020;
