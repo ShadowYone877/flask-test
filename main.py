@@ -12,6 +12,10 @@ def cambiarContraseña():
 def login():
     return render_template("login.html")
 
+@app.route("/asignar_comite")
+def asignar_comite():
+    return render_template("asignar_comite.html")
+
 @app.route("/inicio")
 def inicio():
     return render_template("inicio.html")

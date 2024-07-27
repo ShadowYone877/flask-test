@@ -10,6 +10,7 @@
 @import url(grid2.css);
 @import url(domicilio.css);
 @import url(visualizarDatos.css);
+@import url(asignar_comite.css);
 
 :root {
     --primary-color: #231f20;
