@@ -1,5 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
+from loginForm import loginForm 
 from registerForm import registerForm
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField, PasswordField, BooleanField, SelectField
+
 app = Flask(__name__)
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '7110c8ae51a4b5af97be6534caef90e4bb9bdcb3380af008f90b23a5d1616bf319bc298105da20fe'
@@ -8,9 +12,18 @@ app.config['SECRET_KEY'] = '7110c8ae51a4b5af97be6534caef90e4bb9bdcb3380af008f90b
 def CambiarContraseña():
     return render_template("cambiarcontraseña.html")
 
-@app.route("/login")
+@app.route("/login", methods=["GET","POST"])
 def login():
-    return render_template("login.html")
+    form=loginForm()
+    if form.validate_on_submit():
+        email = form.email.data
+        password = form.password.data
+        print(email,password)
+        next = request.args.get('next', None)
+        if next:
+            return redirect(next)
+        return redirect(url_for('login'))
+    return render_template("login.html",form=form)
 
 @app.route("/inicio")
 def inicio():
@@ -28,6 +41,10 @@ def evento():
 def comite():
     return render_template("comite.html")
 
+@app.route("/tablerocomite")
+def Tcomite():
+    return render_template("tablerocomite.html")
+
 @app.route("/visualizardatosu")
 def mostrarDatosU():
     return render_template("visualizardatosu.html")
@@ -35,10 +52,6 @@ def mostrarDatosU():
 @app.route("/grid1")
 def grid1():
     return render_template("grid1.html")
-
-@app.route("/grid2")
-def grid2():
-    return render_template("grid2.html")
 
 @app.route("/CerrarSesion")
 def cerrarSesion():
@@ -48,7 +61,7 @@ def cerrarSesion():
 def editarDatos():
     return render_template("editardatos.html")
 
-@app.route("/Admin")
+@app.route("/admin")
 def mostrarAdmin():
     return render_template("admin.html")
 

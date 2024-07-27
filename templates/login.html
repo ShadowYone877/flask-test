@@ -1,46 +1,50 @@
 {% extends "base_template.html" %}
-{% block header %}
-<!--
-<header>
-    {% include "header.html" %}  duda por que el login no debe tener un header integrado y tambien para que era el include
-</header>
--->
-{% endblock %}
+{% block title %}Login{% endblock %}
 {% block content %}
-
 <main>
     <div class="Bv">
         <div class="cont">
             <h1 style> Bienvenido <br><br> Inicio militantes</style>
             </h1>
-            <h5 style>Crear una cuenta </style>
-            </h5>
+
         </div>
     </div>
     <div class="contenedor">
         <h3 class="us">Usuario</h3>
         <div>
             <i class="access"></i>
-            <form>
+            <form action="" method="post" novalidate>
+                {{ form.hidden_tag() }}
 
-                <i class="fas fa-user"></i>
-                <!--fas indica que se usando la categoría "Solid" de Font Awesome y fa-user es el nombre de nuestro icono que stamos utilizando-->
-                <label><input type="text" name="Nombre" placeholder="Nombre"></label>
-                <!--placeholder se refiere a texto adicional-->
+                <div class="container-items-login">
+                    <div>
 
-                <br><i class="fas fa-lock"></i>
-                <label><input type="text" password="Contraseña" placeholder="Contraseña"></label>
+                        <i class="fa-solid fa-user"></i>
+                        {{ form.email.label }}
+                    </div>
+                    {{ form.email(class_="form-control-text")}}
+                    {% for error in form.email.errors %}
+                    <span style="color: red;">{{ error }}</span>
+                    {% endfor %}
+                </div>
 
+                <div class="container-items-login">
+                    <div>
+                        <i class="fa-solid fa-lock"></i>
+                        {{ form.password.label }}
+                    </div>
+                    {{ form.password(class_="form-control-text")}}
+                    {% for error in form.password.errors %}
+                    <span style="color: red;">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div class="container-items-login">
+                    {{ form.submit(class_="secButton") }}
+                </div>
             </form>
-
-            <div class="remember">
-                <br>
-                <i class="fas fa-check-circle"></i>
-                <h5<div>Recuerdame &emsp;&emsp;&emsp;&emsp; ¿Olvidaste tu Contraseña?
-            </div>
-            </h5>
         </div>
+    </div>
+    </div>
 
-        <h3><button class="butt"><a href="{{ url_for('mostrarDatosU') }}">Iniciar sesion</a></button></h3>
-    </main>
+</main>
 {% endblock %}

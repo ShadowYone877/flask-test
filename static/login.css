@@ -5,8 +5,8 @@
   }
 .us{  /*el texto de usuario*/
       text-align: center;
-      color:rgba(172, 22, 64, 0.918);
-  }
+      color: var(--secondary-color);
+    }
   
 .cont{
       position: relative;
@@ -17,7 +17,7 @@
       border-radius:7px;
       width: 90%; /*ancho del elemento*/
       max-width: 300px;
-      background: rgba(172, 22, 64, 0.918);
+      background-color: var(--secondary-color);
       padding: 15px; /*es el espacio que existe entre el texto y recuadro*/
       align-items: center;
       
@@ -30,7 +30,7 @@
     }
 .contenedor {
       text-align: center;
-      color:rgba(172, 22, 64, 0.918);
+      color: var(--secondary-color);
       width: 90%;
       max-width: 300px;
       background: #fff;
@@ -45,7 +45,7 @@ input[type=text] {
     width: 60%;
     font-size: 11px; /*es el acercamiento de la letra */
     font-weight: 6px; /*el grosor de la letra*/
-    background-color: rgba(172, 22, 64, 0.918);
+    color: var(--secondary-color);
   
   }
 input::placeholder {  /*input del texto provicional(placeholder)*/
@@ -61,15 +61,15 @@ input::placeholder {  /*input del texto provicional(placeholder)*/
   
 .butt{ /*boton de iniciar sesion*/
     text-align: center;
-    background-color: rgba(172, 22, 64, 0.918);
+    color: var(--secondary-color);
     color:white;
     
   }
 .fas.fa-check-circle{
-    color:rgba(172, 22, 64, 0.918);
-  }
+  color: var(--secondary-color);
+}
 .fas.fa-user {
-  color: rgba(172, 22, 64, 0.918);
+  color: var(--secondary-color);
   position: absolute;
   left: 80px;
   top: 104px;

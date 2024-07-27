@@ -7,12 +7,15 @@
 @import url(inicio.css);
 @import url(registrousuario.css);
 @import url(editardatosestilo.css);
-@import url(grid2.css);
+@import url(admin.css);
+@import url(tablerocomite.css);
+
 
 :root {
     --primary-color: #231f20;
     --secondary-color: #9a2020;
     --gray_base-color: #e1e1e1;
+    --gray_secondary-color: #a7a7a7;
     --form_card-color1: #fbfbfb;
     --text_box-color: #f9cbd0;
     --white: #ffffff;

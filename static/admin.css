@@ -1,0 +1,148 @@
+.container_grid {
+    padding: 40px;
+    column-gap: 60px;
+    display: grid;
+    grid-gap: 1px;
+
+}
+.col-sm{
+    width: 100%;
+    padding: 5px;
+    display:grid;
+    color:#ffffff;
+    justify-content: space-around;
+    align-content: center;
+    padding: 6px;
+    text-align: center;
+}
+.row{
+    background-color: var(--secondary-color);
+}
+
+.fa-solid.fa-magnifying-glass{
+    color: #f2f2f2;
+    padding: 4px;
+
+
+}
+
+.fa-solid.fa-pen-to-square{
+    color: #f2f2f2;
+    padding: 4px;
+}
+
+.fa-solid.fa-trash{
+    color: #f2f2f2;
+    padding: 4px;
+}
+.eliminar{
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.botón_registrar{
+    display: inline-block;
+    background-color: var(--secondary-color);
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 15px;
+    border-style: outset;
+    border-color: var(--primary-color);
+    position: absolute;
+    left:86.5%;
+    top: 16%;
+    color: var(--white);
+}
+
+.botón_buscar{
+    display: inline-block;
+    background-color: var(--secondary-color);
+    padding: 7px;
+    text-decoration: none;
+    border-radius: 15px;
+    border-style: outset;
+    border-color: var(--primary-color);
+    position: absolute;
+    left:80%;
+    top: 16%;
+    color: var(--white);
+
+}
+
+.fa-solid.fa-book{
+    color: var(--white);
+    padding: 4px;
+    position: relative; left: 1px; top: 0px;
+
+    
+}
+
+.btn{
+    position: relative; left: 25px; top: 0px;
+    width: 15px;
+}
+
+.icon-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icon-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: auto;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0s 0.3s; 
+}
+
+.icon-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+    
+
+.modal-header {
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-footer button {
+    margin-left: 5px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cancel {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.danger {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+.dele{
+    position: relative; left: 55%;
+}
+
