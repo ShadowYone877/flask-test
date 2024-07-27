@@ -6,8 +6,8 @@
 } */
 
 .prinButton {
-    color: #ffffff;
-    background-color: #8B0000;
+    color: var(--white);
+    background-color: var(--secondary-color);
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
@@ -19,43 +19,28 @@
 }
 
 .secButton {
-    color: #ffffff;
-    background-color: #8B0000;
+    color: var(--white);
+    background-color: var(--secondary-color);
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
-    font-size: 20px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
     cursor: pointer;
+    height: 50px;
+    width: 150px;
+}
+
+.secButton a{
+    color: var(--white);
+    text-decoration: none;
 }
 
 button:active {
     background-color: #740000;
-}
-
-.navbarInicio {
-    display: grid;    
-    overflow: hidden;
-    background-color:#8B0000;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 6px;
-    
-}
-
-.navbarInicio a {
-    text-decoration: none;
-    float: right;
-    display: grid;
-    color: #ffff;
-    text-align: center;
-    padding: 25px 40px;
-    font-size: 20px;
-}
-
-.navbarInicio a:hover {
-    color: #8b8b8b;
 }
 
 .titulo {
@@ -74,7 +59,7 @@ button:active {
 }
 
 .seccionGral section {
-    background-color: #d9d9d9;
+    background-color: var(--gray_base-color);
     border-radius: 6px;
     padding: 16px;
 }

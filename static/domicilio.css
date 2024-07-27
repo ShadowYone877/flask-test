@@ -1,4 +1,4 @@
-.ruGral {
+.ruGralDomicilio {
     padding: 16px;
     padding-top: 116px;
     display: grid;
@@ -8,14 +8,14 @@
     gap: 16px;
 }
 
-.ruGral section {
+.ruGralDomicilio section {
     background-color: var(--gray_base-color);
     border-radius: 6px;
     padding: 16px;
     height: max-content;
 }
 
-.registroUsuario h3 {
+.addDomicilio h3 {
     grid-column-start: span 2;
     color: black;
     padding: 10px;
@@ -23,8 +23,8 @@
 }
 
 
-.ruGral input{
-    background-color: var(--gray_secondary-color);
+.ruGralDomicilio input{
+    background-color: var(--inputs-color);
     display: grid;
     position: static;
     border-radius: 8px;
@@ -38,12 +38,12 @@
     
 }
 
-.ruGral p {
+.ruGralDomicilio p {
     margin: 1px;
     color: black;
 }
 
-.ruGral input[type=submit] {
+.ruGralDomicilio input[type=submit] {
     text-align: center;
     height: max-content;
     background-color: var(--secondary-color);
@@ -51,10 +51,10 @@
     display: block;
     position: absolute;
     right: 20px;
-    top: 440px;
+    top: 420px;
 }
 
-.formularioRegUs {
+.formularioAddDomilio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;

@@ -1,0 +1,48 @@
+{% extends "base_template.html" %}
+{% block header %}
+<header>{% include "header.html" %}</header>
+{% endblock %}
+{% block content %}
+<main>
+    <form action="post">
+        <section class="ruGralDomicilio">
+            <section class="AddDomicilio">
+                <strong>
+                    <h3>Domicilio</h3>
+                </strong>
+                <fieldset class="formularioAddDomilio">
+                    <label>
+                        <p>Calle:</p>
+                        <input type="text" id="calle" name="calle" required />
+                    </label>
+                    <label>
+                        <p>N° Exterior:</p>
+                        <input type="number" id="numeroEx" name="numeroEx" required />
+                    </label>
+                    <label>
+                        <p>N° Interior:</p>
+                        <input type="number" id="numeroInt" name="numeroInt" />
+                    </label>
+                    <label>
+                        <p>Colonia:</p>
+                        <input type="text" id="col" name="col" required />
+                    </label>
+                    <label>
+                        <p>Municipio/Alcaldia:</p>
+                        <input type="text" id="municipio" name="municipio" />
+                    </label>
+                    <label>
+                        <p>Estado:</p>
+                        <input type="text" id="estado" name="estado" required />
+                    </label>
+                    <label>
+                        <p>Codigo postal:</p>
+                        <input type="number" id="cp" name="cp" required />
+                    </label>
+                </fieldset>
+                <input type="submit" value="Aceptar" />
+            </section>
+        </section>
+    </form>
+</main>
+{% endblock %}

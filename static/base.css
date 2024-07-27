@@ -9,14 +9,20 @@
 @import url(editardatosestilo.css);
 @import url(admin.css);
 @import url(tablerocomite.css);
-
+@import url(domicilio.css);
+@import url(visualizarDatos.css);
+@import url(asignar_comite.css);
+@import url(sesion_comite.css);
 
 :root {
     --primary-color: #231f20;
     --secondary-color: #9a2020;
     --gray_base-color: #e1e1e1;
     --gray_secondary-color: #a7a7a7;
+    --gray_secondary-color: #bebebe;
+    --gray_font-color: #696969;
     --form_card-color1: #fbfbfb;
+    --form_card-color2: #e4e4e4;
     --text_box-color: #f9cbd0;
     --white: #ffffff;
 }

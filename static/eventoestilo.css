@@ -2,15 +2,18 @@
     position: absolute;
     top: 15%;
     left: 18%;
-    background-color: var(--secondary-color);
+    background-color: var(--gray_base-color);
     padding: 30px;
     color: var(--white);
-    border-radius: 30px;
+    border-radius: 6px;
     font-size: 20px;
     width: 70%;
     height: 80%;
-    border: outset;
-    border-color: var(--primary-color);
+    /* border: outset;
+    border-color: var(--primary-color); */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .nombre {
@@ -49,6 +52,13 @@
     justify-content: space-around;
     align-content: center;
     padding: 6px;
+}
+
+.input_format{
+    background-color: var(--gray_secondary-color)!important;
+    border-radius: 8px;
+    padding: 16px;
+    height: 16px;
 }
 
 .porcentajes{

@@ -8,9 +8,9 @@ app = Flask(__name__)
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '7110c8ae51a4b5af97be6534caef90e4bb9bdcb3380af008f90b23a5d1616bf319bc298105da20fe'
 
-@app.route("/CambiarContraseña")
-def CambiarContraseña():
-    return render_template("cambiarcontraseña.html")
+@app.route("/cambiarContraseña")
+def cambiarContraseña():
+    return render_template("Cambiarcontraseña.html")
 
 @app.route("/login", methods=["GET","POST"])
 def login():
@@ -25,13 +25,21 @@ def login():
         return redirect(url_for('login'))
     return render_template("login.html",form=form)
 
+@app.route("/asignar_comite")
+def asignar_comite():
+    return render_template("asignar_comite.html")
+
 @app.route("/inicio")
 def inicio():
     return render_template("inicio.html")
     
 @app.route("/registro")
-def Registro():
+def registro():
     return render_template("Registro.html")
+
+@app.route("/sesion_comite")
+def sesion_comite():
+    return render_template("sesion_comite.html")
 
 @app.route("/evento")
 def evento():
@@ -82,6 +90,18 @@ def registroForm():
 @app.route("/registro_usuario")
 def registrousuario():
     return render_template("registrousuario.html")
+
+@app.route("/datos")
+def datos():
+    return render_template("visualizarDatos.html")
+
+@app.route("/añadir_domicilio")
+def adddomicilio():
+    return render_template("domicilio.html")
+
+@app.route("/pendiente_comite")
+def pendientecomite():
+    return render_template("pendienteComite.html")
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -1,81 +1,52 @@
-{% extends "base_template.html" %}
+{% extends "base_template.html" %} 
+{% block header %}
+<header>{% include "header.html" %}</header>
+{% endblock %} 
 {% block content %}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registro Usuario</title>
-  </head>
-  <body>
-    <!-- * Barra de navegacion -->
-    <header>
-      <nav class="navbarInicio">
-        <strong>
-          <a href="">Contacto</a>
-          <a href="">Militantes</a>
-          <a href="">Comité</a>
-          <a href="">Inicio</a>
-        </strong>
-      </nav>
-    </header>
+<main>
     <form action="post">
-    <section class="ruGral">
-        <!-- ! Nombre, apellido paterno, materno, -->
+        <section class="ruGral">
             <section class="registroUsuario">
-                  <strong><h3>Registro de usuario</h3></strong>
-              <fieldset>
-                <label>
-                    <p>Nombre:</p>
-                    <input type="text" name="name" required>
-                </label>
-                <label>
-                    <p>Apellido paterno:</p>
-                    <input type="text" name="lastname1" required>
-                </label>
-                <label>
-                    <p>Apellido materno:</p>
-                    <input type="text" name="lastname2" required>
-                </label>
-                <label>
-                    <p>Celular:</p>
-                    <input type="tel" name="cell" required>
-                </label>
-                <label>
-                    <p>Telefono</p>
-                    <input type="tel" name="tel">
-                </label>
-                <label>
-                    <p>Correo:</p>
-                    <input type="email" name="email" required>
-                </label>
-                <label>
-                    <p>Sección:</p>
-                    <input type="text" name="section" required>
-                </label>
-                <label>
-                    <p>Distrito federal:</p>
-                    <input type="text" name="df" required>
-                </label>
-                <label>
-                    <p>Estado:</p>
-                    <input type="text" name="state" required>
-                </label>
-                <label>
-                    <p>Distrito local:</p>
-                    <input type="text" name="dl" required>
-                </label>
-                <label>
-                    <p>Grado:</p>
-                    <input type="text" name="grado" required>
-                </label>
-                <label>
-                    <p>Militante:</p>
-                    <input type="text" name="militante" required>
-                </label>
-              </fieldset>
+                <strong>
+                    <h3>Registro de usuario</h3>
+                </strong>
+                <fieldset class="formularioRegUs">
+                    <label>
+                        <p>Nombre:</p>
+                        <input type="text" id="name" name="name" required />
+                    </label>
+                    <label>
+                        <p>Apellido paterno:</p>
+                        <input type="text" id="lastname1" name="lastname1" required />
+                    </label>
+                    <label>
+                        <p>Apellido materno:</p>
+                        <input type="text" id="lastname2" name="lastname2" required />
+                    </label>
+                    <label>
+                        <p>Celular:</p>
+                        <input type="tel" id="cellphone" name="cellphone" required />
+                    </label>
+                    <label>
+                        <p>Telefono:</p>
+                        <input type="tel" id="homephone" name="homephone" />
+                    </label>
+                    <label>
+                        <p>Correo:</p>
+                        <input type="email" id="email" name="email" required />
+                    </label>
+                    <label>
+                        <p>Clave elector:</p>
+                        <input type="text" id="cve" name="cve" required />
+                    </label>
+                    <label>
+                        <p>Rol:</p>
+                        <input type="text" id="rol" name="rol" required />
+                    </label>
+                </fieldset>
+                <input type="submit" value="Aceptar" />
             </section>
-            <section class="registroUsuario2">
+            <!-- <section class="registroUsuario2">
                 <fieldset>
                     <label>
                         <p>Calle:</p>
@@ -101,10 +72,8 @@
                         <p>Codigo postal:</p>
                         <input type="number" name="cp" required>
                     </label>
-                </fieldset>
-                <input type="submit" value="Aceptar">
-            </section>
-          </form>
-  </body>
-</html>
+                </fieldset> -->
+        </section>
+    </form>
+</main>
 {% endblock %}
