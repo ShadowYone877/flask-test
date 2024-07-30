@@ -4,6 +4,7 @@
   /*la alineacion del texto*/
   font-family: Arial, sans-serif;
   color: aliceblue;
+  padding: 15px;
   /*color */
 }
 
@@ -20,13 +21,14 @@
 }
 
 .cont {
+  position: relative;
+  left: 700px;
+  top: 50px;
   border-radius: 7px;
   width: 90%;
-  /*ancho del elemento*/
   max-width: 300px;
-  background-color: var(--secondary-color);
+  background: var(--secondary-color);
   padding: 15px;
-  /*es el espacio que existe entre el texto y recuadro*/
   align-items: center;
 
 }
@@ -34,11 +36,13 @@
 .contenedor {
   border-radius: 7px;
   position: relative;
-  left: 500px;
+  left: 710px;
   top: 50px;
 }
 
 .contenedor {
+  border-radius: 7px;
+  position: relative;
   text-align: center;
   color: var(--secondary-color);
   width: 90%;
@@ -46,20 +50,18 @@
   background: #fff;
   padding: 15px;
   align-items: center;
-
 }
 
-input[type=text] {
-  /*input sobre el nombre y contraseña del usuario*/
+.form-control-text {
   margin-top: 10px;
-  /*es el margen que tiene un boton de otro*/
-  /* quite el color predeterminado y quite heigth para no choquen los css de los que tenemos todos*/
-  padding: 5px;
+  padding: 3px 2px;
+  width: 60%;
+  height: 25px;
   font-size: 11px;
-  /*es el acercamiento de la letra */
   font-weight: 6px;
-  /*el grosor de la letra*/
-  color: var(--secondary-color);
+  background-color: var(--white);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
 
 }
 
@@ -92,14 +94,19 @@ input::placeholder {
 
 .fas.fa-user {
   color: var(--secondary-color);
-  position: absolute;
-  left: 80px;
-  top: 104px;
+
+
 }
 
 .fas.fa-lock {
-  color: rgba(172, 22, 64, 0.918);
-  position: absolute;
-  left: 80px;
-  top: 146px;
+  color: var(--secondary-color);
+
+}
+
+.container-items-login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+
 }

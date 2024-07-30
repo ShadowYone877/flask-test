@@ -1,0 +1,141 @@
+.contenedor_tarea {
+    margin-top: 60px;
+    border-radius: 35px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    background-color: var(--secondary-color);
+    padding: 15px;
+    color: var(--white);
+    font-size: 20px;
+    width: 50%;
+    height: 60%;
+    
+
+}
+
+.word_tarea {
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    padding: 15px;
+}
+
+.identificacion_tarea {
+    width: 255px;
+    height: 8%;
+    background-color: var(--secondary-color);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 150px;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.identificacion_persona {
+    width: 255px;
+    height: 8%;
+    background-color: var(--secondary-color);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 80p;
+    left: 500px;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.nombre_tarea{/*izquierdo*/
+    width: 255px;
+    height: 8%;
+    background-color: var(--secondary-color);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 170px;
+    left: 150px;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 25px;
+
+}
+.fechasignacion{/*derecho*/
+    width: 255px;
+    height:  8%;
+    background-color: var(--secondary-color);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 170px;
+    left: 500px;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 25px;
+
+}
+
+.fecha_finalt{
+    width: 255px;
+    height:  8%;
+    background-color: var(--secondary-color);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 25px;
+
+}
+.fecha_iniciot{
+    width: 255px;
+    height:  8%;
+    background-color: var(--secondary-color);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 250px;
+    left: 500px;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 25px;
+}
+.identificacion_direccion{
+    width: 255px;
+    height:  8%;
+    background-color: var(--secondary-color);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 330px;
+    left: 150px;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.fecha_reporte{
+    width: 255px;
+    height:  8%;
+    background-color: var(--secondary-color);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 330px;
+    left: 500px;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 25px;
+}
+.porcent{
+    position: relative;
+    left: 305px;
+    top: 245px;
+    margin-top: 55px;
+    display: grid;
+    color: var(--white);
+    padding: 6px;
+}
+
+/* porcentaje pendiente */
+

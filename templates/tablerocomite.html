@@ -6,6 +6,116 @@
 </header>
 {% endblock %}
 {% block content %}
+<main>
+    <section class="cont_tablero">
+        <h3>Tablero del comite</h3>
+    </section>
 
-   
+    <div class="tarea">
+        <div class="seleccionar">
+            <div class="selec">
+                <span>Tarea asignada</span>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="options_list">
+                <div class="option">Brigada</div>
+                <div class="option">Reunión</div>
+                <div class="option">Censo</div>
+            </div>
+        </div>
+    </div>
+    <section ip="I" class="InicioF">
+        <!-- <p> Fecha inicio</p> -->
+        <div><input type="date" name=""></div>
+    </section>
+    <section ip="F" class="FinalF">
+        <div><input type="date" name=""></div>
+    </section>
+    <section class="description">
+        <label>Descripcion</label>
+        <div><input type="text" placeholder="Descripcion"></div>
+    </section>
+    <div class="avance">
+        <div class="seleccionar">
+            <div class="sel">
+                <span>Avance</span>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="options_list">
+                <div class="option">25%</div>
+                <div class="option">50%</div>
+                <div class="option">75%</div>
+                <div class="option">100%</div>
+            </div>
+        </div>
+    </div>
+    <section ip="persona" class="cont_fotos">
+        <div>
+            <input type="file" id="fileInput">
+            <button id="uploadButton">Cargar</button>
+        </div>
+        <div id="filePreview"></div>
+    </section>
+
+    <div class="list">
+        <h4>Lista de militante</h4>
+        <br>
+        <h5>Operador politico</h5>
+        <br>
+        <h5>Operador organizacional</h5>
+    </div>
+    
+    <section class="cont_militantes">
+      <h6>1.Militante 1</h6>
+    </section>
+    <script>
+        const select = document.querySelector(".selec");
+        const options_list = document.querySelector(".options_list");
+        const options = document.querySelector(".option");
+
+        select.addEventListener("click", () => {
+            options_list.classList.toggle("active");
+            select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+        });
+
+        options.forEach((option) => {
+            option.addEventListener("click", () => {
+                options.forEach((option) => { option.classList.remove('selec') });
+                select.querySelector("span").innerHTML = option.innerHTML;
+                option.classList.add("selec");
+                options_list.classList.toggle("active");
+                select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+            });
+        });
+    </script>
+    <script>
+        document.getElementById('uploadButton').addEventListener('click', function () {
+            var fileInput = document.getElementById('fileInput');
+            var filePreview = document.getElementById('filePreview');
+
+            if (fileInput.files.length === 0) {
+                alert('Por favor, seleccione un archivo primero.');
+                return;
+            }
+
+            var file = fileInput.files[0];
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                // Aquí puedes agregar lógica para manejar la vista previa del archivo
+                var preview = document.createElement('img');
+                preview.src = e.target.result;
+                preview.style.maxWidth = '100%'; // Ajustar el tamaño según sea necesario
+                preview.style.maxHeight = '200px'; // Ajustar el tamaño según sea necesario
+                filePreview.innerHTML = ''; // Limpiar cualquier vista previa previa
+                filePreview.appendChild(preview);
+            };
+
+            reader.readAsDataURL(file);
+        });
+
+    </script>
+
+
+</main>
 {% endblock %}

@@ -103,5 +103,9 @@ def adddomicilio():
 def pendientecomite():
     return render_template("pendienteComite.html")
 
+@app.route("/tarea", methods=["GET", "POST"])
+def tarea():
+    return render_template("tarea.html")
+
 if __name__ == '__main__':
     app.run(debug=True)

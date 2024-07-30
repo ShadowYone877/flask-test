@@ -1,0 +1,175 @@
+.cont_tablero {
+    margin-top: 60px;
+    border-radius: 35px;
+    position: absolute;
+    top: 15%;
+    left: 18%;
+    background-color: var(--secondary-color);
+    padding: 30px;
+    color: var(--white);
+    font-size: 20px;
+    width: 60%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.tarea {
+    position: relative;
+    left: 26%;
+    top: 205px;
+    margin-top: 55px;
+    display: grid;
+    color: var(--white);
+    padding: 6px;
+    
+}
+
+.seleccionar {
+    background-color: var(--secondary-color);
+    width: 125%;
+    height: 5px;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;    
+}
+
+.selec {
+    background-color: var(--gray_secondary-color);
+    padding: 20px;
+    height: 20px;
+    max-width: 500px;
+    color: var(--white);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+
+.fa-solid.fa-angle-down {
+    position: relative;
+    left: 25%;
+    color: var(--white);
+
+}
+
+
+.InicioF input {
+    background-color: var(--gray_secondary-color);
+    color: var(--white);
+    width: 260px;
+    position: relative;
+    left: 19%;
+    top: 250px;
+
+}
+
+.FinalF input {
+    background-color: var(--gray_secondary-color);
+    color: var(--white);
+    width: 260px;
+    position: relative;
+    left: 35%;
+    top: 202px;
+
+}
+
+.description input {
+    background-color: var(--gray_secondary-color);
+    /* color: var(--white);  */
+    position: relative;
+    left: 26.5%;
+    top: 253px;
+    width: 40%;
+    height: 50%;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.avance {
+    position: relative;
+    left: 19%;
+    top: 240px;
+    margin-top: 55px;
+    display: grid;
+    color: var(--white);
+    padding: 6px;
+}
+
+.seleccionar {
+    background-color: var(--secondary-color);
+    width: 125%;
+    height: 5px;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.sel {
+    background-color: var(--gray_secondary-color);
+    padding: 20px;
+    height: 20px;
+    max-width: 500px;
+    color: var(--white);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-solid.fa-angle-down {
+    position: absolute;
+    left: 83%;
+    color: var(--white);
+
+}
+
+.cont_fotos {
+    position: relative;
+    left: 19%;
+    top: 318px;
+    width: 424px;
+    height: 35px;
+    padding: 2px;
+    background-color: var(--white);
+}
+
+input::placeholder {
+    color: var(--white);
+}
+
+.list {
+    color: var(--white);
+    text-align: center;
+    position: absolute;
+    left: 58%;
+    top: 305px;
+}
+
+.cont_militantes {
+    border-radius: 35px;
+    width: 295px;
+    /*ancho del elemento*/
+    height: 220px;
+    max-width: 500px;
+    background-color: var(--gray_secondary-color);
+    padding: 15px;
+    /*es el espacio que existe entre el texto y recuadro*/
+    text-align: center;
+    position: relative;
+    left: 57%;
+    top: 75px;
+}

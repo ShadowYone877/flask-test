@@ -13,6 +13,7 @@
 @import url(visualizarDatos.css);
 @import url(asignar_comite.css);
 @import url(sesion_comite.css);
+@import url(tarea.css);
 
 :root {
     --primary-color: #231f20;
