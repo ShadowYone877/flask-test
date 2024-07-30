@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from .loginForm import loginForm 
 from .registerForm import registerForm
+from .event2Form import event2Form
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField, BooleanField, SelectField
 
@@ -109,6 +110,21 @@ def create_app():
     @app.route("/tarea", methods=["GET", "POST"])
     def tarea():
         return render_template("tarea.html")
+
+    @app.route("/evento2/", methods=["GET","POST"])
+    def segEvento():
+        form=event2Form()
+        if form.validate_on_submit():
+            date = form.date.data
+            event = form.event.data
+            person = form.person.data
+            print(date, event, person)
+            next = request.args.get('next', None)
+            if next:
+                return redirect(next)
+            return redirect(url_for('evento2'))
+        return render_template("evento2.html", form=form)
+
 
     if __name__ == '__main__':
         app.run(debug=True)

@@ -1,0 +1,60 @@
+{% extends "base_template.html" %}
+{% block header %}
+<header>
+    {% include "header.html" %}
+</header>
+{% endblock %}
+{% block content %}
+<main>
+    <section class="evento2_cont">
+        <div class="titulo">
+            <span>Evento</span>
+        </div>
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <div class="id_evento">
+
+            </div>
+            <div>
+                {{ form.event.label }}
+                {{ form.event }}<br>
+                {% for error in form.event.errors %}
+                <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div class="fecha_conv_evento">
+            </div>
+            <div>
+                {{ form.date.label }}
+                {{ form.date }}<br>
+                {% for error in form.date.errors %}
+                <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div class="fecha_evento">
+                <label>Fecha del evento</label><br>
+                <input class="input_format" type="date" required>
+            </div>
+            <div class="id_persona">
+                {{ form.person.label }}
+            </div>
+            <div>
+                {{ form.person.label }}
+                {{ form.person }}<br>
+                {% for error in form.person.errors %}
+                <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+            </div>
+            <div class="button1">
+                <a href="{{url_for('evento')}}"><button class="atras">Atrás</button></a>
+                {{ form.submit() }}
+            </div>
+            <div class="button2">
+            </div>
+            <div>
+            </div>
+        </form>
+
+    </section>
+</main>
+{% endblock %}
