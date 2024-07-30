@@ -103,9 +103,9 @@ def adddomicilio():
 def pendientecomite():
     return render_template("pendienteComite.html")
 
-@app.route("/Trayectorial")
-def Trayectorial():
-    return render_template("Trayectorial.html")
+@app.route("/Trayectoria")
+def Trayectoria():
+    return render_template("Trayectoria.html")
 
 @app.route("/Direccion")
 def Direccion():   
