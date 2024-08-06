@@ -88,10 +88,10 @@ input[type=addres]{
     border-radius: 15px;
     border: none;
 }
-.address_container div .row .col input{
+.address_container form div .row .col input{
   background-color: var(--gray_secondary-color);
-    display: grid;
-    position: static;
+    /* display: grid;
+    position: static; */
     border-radius: 8px;
     padding: 16px;
     height: 16px;
@@ -100,5 +100,7 @@ input[type=addres]{
     margin: 10px;
     border: none;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
 }
 

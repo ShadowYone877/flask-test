@@ -131,11 +131,20 @@ def create_app():
     
     @app.route("/address_form/", methods=["GET", "POST"])
     def address_form():
-        form = addressForm()
+        form=addressForm()
         if form.validate_on_submit():
             street = form.street.data
-            print("#################")
-            print(street)
+            numberExt = form.numberExt.data
+            numberInt = form.numberInt.data
+            state = form.state.data
+            municipality = form.municipality.data
+            cologne = form.cologne.data
+            cp = form.cp.data
+            print(street, numberExt, numberInt, state, municipality, cologne, cp)
+            next = request.args.get('next', None)
+            if next:
+                return redirect(next)
+            return redirect(url_for('address_form'))
         return render_template("address_form.html",form=form)
 
     @app.route("/evento2/", methods=["GET","POST"])

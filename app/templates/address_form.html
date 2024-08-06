@@ -24,49 +24,54 @@
                         {% for error in form.street.errors %}
                         <span style="color: red;">{{ error }}</span>
                         {% endfor %}
-                        
                     </div>
                     <div class="col">
-                        <label>
-                            <p>Numero exterior:</p>
-                            <input id="name" name="name" required />
-                        </label>
-                    </div>
-                </div>
-                <div class="row  ">
-                    <div class="col">
-                        <label>
-                            <p>Numero interior:</p>
-                            <input id="name" name="name" required />
-                        </label>
-                    </div>
-                    <div class="col">
-                        <label>
-                            <p>Colonia:</p>
-                            <input id="name" name="name" required />
-                        </label>
+                        {{ form.numberExt.label }}
+                        {{ form.numberExt }}<br>
+                        {% for error in form.numberExt.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                        {% endfor %}
                     </div>
                 </div>
                 <div class="row  ">
                     <div class="col">
-                        <label>
-                            <p>Municipio/Alcaldia:</p>
-                            <input id="name" name="name" required />
-                        </label>
+                        {{ form.numberInt.label }}
+                        {{ form.numberInt }}<br>
+                        {% for error in form.numberInt.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                        {% endfor %}
                     </div>
                     <div class="col">
-                        <label>
-                            <p>Estado:</p>
-                            <input id="name" name="name" required />
-                        </label>
+                        {{ form.cologne.label }}
+                        {{ form.cologne }}<br>
+                        {% for error in form.cologne.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                        {% endfor %}
                     </div>
                 </div>
                 <div class="row  ">
                     <div class="col">
-                        <label>
-                            <p>Codigo postal:</p>
-                            <input id="name" name="name" required />
-                        </label>
+                        {{ form.municipality.label }}
+                        {{ form.municipality }}<br>
+                        {% for error in form.municipality.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                    <div class="col">
+                        {{ form.state.label }}
+                        {{ form.state }}<br>
+                        {% for error in form.state.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="row  ">
+                    <div class="col">
+                        {{ form.cp.label }}
+                        {{ form.cp }}<br>
+                        {% for error in form.cp.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                        {% endfor %}
                     </div>
                 </div>
 
@@ -76,6 +81,7 @@
                     </div>
                     <div class="col my-3">
                         <button type="submit" class="button-standar">Siguiuente</button>
+                        
                     </div>
                 </div>
 
