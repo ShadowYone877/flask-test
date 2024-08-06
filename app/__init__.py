@@ -27,7 +27,7 @@ def create_app():
             next = request.args.get('next', None)
             if next:
                 return redirect(next)
-            return redirect(url_for('login'))
+            return redirect(url_for('registro'))
         return render_template("login.html",form=form)
 
     @app.route("/asignar_comite")
