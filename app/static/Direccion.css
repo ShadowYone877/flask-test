@@ -1,4 +1,4 @@
-
+/* 
 header {
     background-color: #640909;
     
@@ -97,7 +97,7 @@ header {
     border-radius: 25px;
     position: relative;left: 10px;top:20px;
   } */
-  input[type=int  ]{
+  /* input[type=int  ]{
     color: black;
     width: 72%;
     height: 10px;
@@ -211,4 +211,4 @@ header {
   
     
   }
-  
+   */ 

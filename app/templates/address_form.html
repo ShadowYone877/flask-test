@@ -7,72 +7,80 @@
 {% endblock %}
 {% block content %}
 <main>
+    {% if error %}
+    <p style="color: red;"><strong>Error:</strong> {{ error }}
+        {% endif %}
     <section class="address_container">
-        <div class="container text-center">
-            <strong class="titulo">
-                <h4> Dirección </h4>
-            </strong>
-            <div class="row  ">
-                <div class="col">
-                    <label>
-                        <p>Calle:</p>
-                        <input class="input_address"   id="name" name="name" required />
-                    </label>
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <div class="container text-center">
+                <strong class="titulo">
+                    <h4> Dirección </h4>
+                </strong>
+                <div class="row  ">
+                    <div class="col">
+                        {{ form.street.label }}
+                        {{ form.street }}<br>
+                        {% for error in form.street.errors %}
+                        <span style="color: red;">{{ error }}</span>
+                        {% endfor %}
+                        
+                    </div>
+                    <div class="col">
+                        <label>
+                            <p>Numero exterior:</p>
+                            <input id="name" name="name" required />
+                        </label>
+                    </div>
                 </div>
-                <div class="col">
-                    <label>
-                        <p>Numero exterior:</p>
-                        <input   id="name" name="name" required />
-                    </label>
+                <div class="row  ">
+                    <div class="col">
+                        <label>
+                            <p>Numero interior:</p>
+                            <input id="name" name="name" required />
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label>
+                            <p>Colonia:</p>
+                            <input id="name" name="name" required />
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="row  ">
-                <div class="col">
-                    <label>
-                        <p>Numero interior:</p>
-                        <input   id="name" name="name" required />
-                    </label>
+                <div class="row  ">
+                    <div class="col">
+                        <label>
+                            <p>Municipio/Alcaldia:</p>
+                            <input id="name" name="name" required />
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label>
+                            <p>Estado:</p>
+                            <input id="name" name="name" required />
+                        </label>
+                    </div>
                 </div>
-                <div class="col">
-                    <label>
-                        <p>Colonia:</p>
-                        <input   id="name" name="name" required />
-                    </label>
+                <div class="row  ">
+                    <div class="col">
+                        <label>
+                            <p>Codigo postal:</p>
+                            <input id="name" name="name" required />
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <div class="row  ">
-                <div class="col">
-                    <label>
-                        <p>Municipio/Alcaldia:</p>
-                        <input   id="name" name="name" required />
-                    </label>
-                </div>
-                <div class="col">
-                    <label>
-                        <p>Estado:</p>
-                        <input   id="name" name="name" required />
-                    </label>
-                </div>
-            </div>
-            <div class="row  ">
-                <div class="col">
-                    <label>
-                        <p>Codigo postal:</p>
-                        <input   id="name" name="name" required />
-                    </label>
-                </div>
-            </div>
 
-            <div class="row  ">
-                <div class="col my-3">
-                    <button class="button-standar">Atras</button>
+                <div class="row  ">
+                    <div class="col my-3">
+                        <button class="button-standar">Atras</button>
+                    </div>
+                    <div class="col my-3">
+                        <button type="submit" class="button-standar">Siguiuente</button>
+                    </div>
                 </div>
-                <div class="col my-3">
-                    <button class="button-standar">Siguiuente</button>
-                </div>
+
             </div>
-            
-        </div>
+        </form>
     </section>
 </main>
 

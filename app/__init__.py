@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 from .loginForm import loginForm 
 from .registerForm import registerForm
+from .addressForm import addressForm
 from .event2Form import event2Form
 from .tablerocomiteForm import tablerocomiteForm
 from flask_wtf import FlaskForm
@@ -128,9 +129,14 @@ def create_app():
     def tarea():
         return render_template("tarea.html") 
     
-    @app.route("/address_form/")
+    @app.route("/address_form/", methods=["GET", "POST"])
     def address_form():
-        return render_template("address_form.html")
+        form = addressForm()
+        if form.validate_on_submit():
+            street = form.street.data
+            print("#################")
+            print(street)
+        return render_template("address_form.html",form=form)
 
     @app.route("/evento2/", methods=["GET","POST"])
     def segEvento():
