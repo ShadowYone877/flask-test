@@ -1,0 +1,80 @@
+{% extends "base_template.html" %}
+{% block title %}ADDRESS{% endblock %}
+{% block header %}
+<header>
+    {% include "header.html" %}
+</header>
+{% endblock %}
+{% block content %}
+<main>
+    <section class="address_container">
+        <div class="container_direc">
+            <div class="row align-items-start">
+                <strong class="titulo">
+                    <h4> Dirección </h4>
+                </strong>
+                <div class="col">
+                    <label>
+                        <p>Calle:</p>
+                        <input type="addres" id="name" name="name" required />
+                    </label>
+                </div>
+                <div class="col">
+                    <label>
+                        <p>Numero exterior:</p>
+                        <input type="addres" id="name" name="name" required />
+                    </label>
+                </div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col">
+                    <label>
+                        <p>Numero interior:</p>
+                        <input type="addres" id="name" name="name" required />
+                    </label>
+                </div>
+                <div class="col">
+                    <label>
+                        <p>Colonia:</p>
+                        <input type="addres" id="name" name="name" required />
+                    </label>
+                </div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col">
+                    <label>
+                        <p>Municipio/Alcaldia:</p>
+                        <input type="addres" id="name" name="name" required />
+                    </label>
+                </div>
+                <div class="col">
+                    <label>
+                        <p>Estado:</p>
+                        <input type="addres" id="name" name="name" required />
+                    </label>
+                </div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col">
+                    <label>
+                        <p>Codigo postal:</p>
+                        <input type="addres" id="name" name="name" required />
+                    </label>
+                </div>
+            </div>
+
+            <div class="row align-items-start">
+                <div class="back">
+                    <button>Atras</button>
+                </div>
+            </div>
+            <div class="row align-items-start">
+                    <div class="next">
+                    <button>Siguiente</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

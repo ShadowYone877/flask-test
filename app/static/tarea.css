@@ -1,4 +1,4 @@
-.contenedor_tarea {
+.main-container {
     margin-top: 60px;
     border-radius: 35px;
     position: absolute;
@@ -11,7 +11,6 @@
     width: 50%;
     height: 60%;
     
-
 }
 
 .word_tarea {

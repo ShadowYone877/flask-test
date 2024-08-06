@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for
 from .loginForm import loginForm 
 from .registerForm import registerForm
+from .event2Form import event2Form
+from .tablerocomiteForm import tablerocomiteForm
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField, BooleanField, SelectField
 
@@ -52,9 +54,21 @@ def create_app():
     def comite():
         return render_template("comite.html")
 
-    @app.route("/tablerocomite")
-    def Tcomite():
-        return render_template("tablerocomite.html")
+    @app.route("/tablerocomite/", methods=["GET","POST"])
+    def tablerocomite():
+        form=tablerocomiteForm()
+        if form.validate_on_submit():
+            homework = form.homework.data
+            dateinicio = form.dateinicio.data
+            datefinal = form.datefinal.data
+            description = form.description.data
+            advance = form.advance.data
+            print(homework,dateinicio,datefinal,description,advance)
+            next = request.args.get('next', None)
+            if next:
+                return redirect(next)
+            return redirect(url_for('tablerocomite'))
+        return render_template("tablerocomite.html",form=form)
 
     @app.route("/visualizardatosu")
     def mostrarDatosU():
@@ -105,10 +119,33 @@ def create_app():
     @app.route("/pendiente_comite")
     def pendientecomite():
         return render_template("pendienteComite.html")
+    
+    @app.route("/Direccion")
+    def Direccion():
+        return render_template("Direccion.html")
 
     @app.route("/tarea", methods=["GET", "POST"])
     def tarea():
-        return render_template("tarea.html")
+        return render_template("tarea.html") 
+    
+    @app.route("/address_form/")
+    def address_form():
+        return render_template("address_form.html")
+
+    @app.route("/evento2/", methods=["GET","POST"])
+    def segEvento():
+        form=event2Form()
+        if form.validate_on_submit():
+            date = form.date.data
+            event = form.event.data
+            person = form.person.data
+            print(date, event, person)
+            next = request.args.get('next', None)
+            if next:
+                return redirect(next)
+            return redirect(url_for('evento2'))
+        return render_template("evento2.html", form=form)
+
 
     if __name__ == '__main__':
         app.run(debug=True)

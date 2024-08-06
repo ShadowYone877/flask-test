@@ -85,7 +85,7 @@ input[type=date]{
   background: #e1e1e1;
   padding: 15px;
   border-radius:25px;  
-  position: absolute; left: 22px; top: 235px;
+  /* position: absolute; left: 22px; top: 235px; */
   margin-top: 15px;
 }
 
@@ -141,3 +141,4 @@ input[type=butt]{
   position: absolute; left: 90px; top: 415px;
   z-index: 1;
 }
+

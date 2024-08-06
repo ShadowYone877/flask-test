@@ -1,0 +1,130 @@
+ <!-- <main class="main-prueba"> -->
+    <br>
+    <br>
+    <br>
+
+<section class="cont_tablero">
+    <h3>Tablero del comite</h3>
+</section>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <div class="tarea_h">
+        {{ form.homework.label }}
+    </div>
+    <div>
+        {{ form.homework(class_="tarea_h")}}
+        {% for error in form.homework.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+
+    </div>
+    <div class="InicioF">
+        {{ form.dateinicio.label }}
+    </div>
+    <div>
+        {{ form.dateinicio(class_="InicioF")}}
+        {% for error in form.dateinicio.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+
+    </div>
+    <section ip="F" class="FinalF">
+        {{ form.datefinal.label }}
+    </section>
+    <div>
+        {{ form.datefinal }}<br>
+        {% for error in form.datefinal.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+    </div>
+
+    <div class="description">
+        {{ form.description.label }}
+    </div>
+    <div>
+        {{ form.description(class_="description")}}
+        {% for error in form.description.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <div class="avance">
+    </div>
+    <div>
+        {{ form.advance.label }}
+        {{ form.advance }}<br>
+        {% for error in form.advance.errors %}
+        <span style="color: red;">{{ error }}</span>
+        {% endfor %}
+    </div>
+    <section ip="persona" class="cont_fotos">
+        <div>
+            <input class="seleccionart" type="file" id="fileInput">
+            <button id="uploadButton">Cargar</button>
+        </div>
+        <div id="filePreview"></div>
+    </section>
+
+    <div class="list">
+        <h4>Lista de militante</h4>
+        <br>
+        <h5>Operador politico</h5>
+        <br>
+        <h5>Operador organizacional</h5>
+    </div>
+
+    <section class="cont_militantes">
+        <h6>1.Militante 1</h6>
+    </section>
+    <div>
+        {{ form.submit(class_="cargar") }}
+    </div>
+</form>
+<script>
+    const selec = document.querySelector(".selec");
+    const options_list = document.querySelector(".options_list");
+    const options = document.querySelector(".option");
+
+    select.addEventListener("click", () => {
+        options_list.classList.toggle("active");
+        select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+    });
+
+    options.forEach((option) => {
+        option.addEventListener("click", () => {
+            options.forEach((option) => { option.classList.remove('selec') });
+            select.querySelector("span").innerHTML = option.innerHTML;
+            option.classList.add("selec");
+            options_list.classList.toggle("active");
+            select.querySelector(".fa-angle-down").classList.toggle("fa-angle-up");
+        });
+    });
+</script>
+<script>
+    document.getElementById('uploadButton').addEventListener('click', function () {
+        var fileInput = document.getElementById('fileInput');
+        var filePreview = document.getElementById('filePreview');
+
+        if (fileInput.files.length === 0) {
+            alert('Por favor, seleccione un archivo primero.');
+            return;
+        }
+
+        var file = fileInput.files[0];
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            var preview = document.createElement('img');
+            preview.src = e.target.result;
+            preview.style.maxWidth = '100%'; 
+            preview.style.maxHeight = '200px'; 
+            filePreview.innerHTML = ''; 
+            filePreview.appendChild(preview);
+        };
+
+        reader.readAsDataURL(file);
+    });
+
+</script>
+
+</main>
+{% endblock %}

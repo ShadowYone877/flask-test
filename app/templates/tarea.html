@@ -6,33 +6,40 @@
 </header>
 {% endblock %}
 {% block content %}
-<main>
-    <div class="contenedor_tarea" id="Cont">
-        <h3 class="word_tarea"> Tarea </h3>
-        <input class="identificacion_tarea" type="text" placeholder="Identificacion de tarea ">
-        <input class="identificacion_persona" type="text" placeholder="Identificacion persona">
-        <input class="nombre_tarea" type="text" placeholder="Nombre de la tarea">
-        <input class="fechasignacion" type="datetime-local" placeholder="Fecha asignacion de la tarea">
-        <input class="fecha_finalt" type="datetime-local" placeholder="Fecha final de tarea">
-        <input class="fecha_iniciot" type="datetime-local" placeholder="Fecha inicio de la realizacion">
-        <input class="identificacion_direccion" type="text" placeholder="Identificacion de la direccion">
-        <input class="fecha_reporte" type="datetime-local" placeholder="Fecha de resporte">
+<main class="main-container">
+        <h3 class="word_tarea">Tarea</h3>
+        <div class="">
+            <input class="identificacion_tarea" type="text" placeholder="Identificación de tarea">
+        </div>
+            <input class="identificacion_persona" type="text" placeholder="Identificación persona">
+        </div>
+            <input class="nombre_tarea" type="text" placeholder="Nombre de la tarea">
+        </div>
+            <input class="fechasignacion" type="datetime-local" placeholder="Fecha asignación de la tarea">
+        </div>
+            <input class="fecha_finalt" type="datetime-local" placeholder="Fecha final de tarea">
+        </div>
+            <input class="fecha_iniciot" type="datetime-local" placeholder="Fecha inicio de la realización">
+
+        <!-- </div class="identificacion_direccion"> -->
+        <!-- <label>Direccion</label> -->
+            <input class="identificacion_direccion" type="text" placeholder="Identificación de la dirección">
+        </div>
+            <!-- <label>FECHA</label> -->
+            <input class="fecha_reporte" type="datetime-local">
+        </div>
         <div class="porcent">
-            <div class="seleccionar">
-                <div class="sel">
-                    <span>Porcentaje realizado</span>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
-                <div class="options_list">
-                    <div class="option">25%</div>
-                    <div class="option">50%</div>
-                    <div class="option">75%</div>
-                    <div class="option">100%</div>
-                </div>
-            </div>
-        </div> 
-    </div>
-    
+            <label>Porcentaje Realizado</label>
+            <select id="progress-select" class="progress-dropdown">
+                <option value="25">25%</option>
+                <option value="50">50%</option>
+                <option value="75">75%</option>
+                <option value="100">100%</option>
+            </select>
+        </div>
+        
+</main>
+
 
 
     

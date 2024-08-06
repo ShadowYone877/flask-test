@@ -1,44 +1,46 @@
 {% extends "base_template.html" %}
+{% block title %}Asignar comite{% endblock %}
 {% block header %}
 <header>
-    {% include "header.html" %}
+  {% include "header.html" %}
 </header>
 {% endblock %}
 {% block content %}
-<body>
-    <div class="contenedor_pricipal">
-        <div class="tere"></div>
-        
-     
-        <span class="v60_12">Integrante 5</span>
-        <span class="v60_13">Integrante 3</span>
-        <div class=" recuadro_comite"></div>
-        <span class="v60_21">Asignar integrante de comité</span>
-          <select  class="nombre_comite" name="lenguajes" id="lang">
-            <option value="javascript">Nombre de comite </option>
-            <option value="php">PHP</option>
-            <option value="java">Java</option>
-          </select>
-          
-        <div class="v60_23"></div>
-        <div class="v60_24"></div>
-        <div class="v60_25"></div>
-
-          <button class="Agregar_asignar">Agregar +</button>
+<main>
+  <div class="contenedor_pricipal">
+    <div class="tere"></div>
     
-        <span class="v60_30">Integrante 4</span>
-       
-        <form method="get" action="/search">
-            <input class="buscar" type="search" name="search-text" placeholder=" Buscar Integrante">
-          
-        <span class="v60_38">Integrante 1</span>
-        <span class="v60_39">Integrante 2</span>
-        <button class="Regresar_asignar"> Regresar  </button>
-        <i class="fa-solid fa-caret-left"></i>
-       
-    </div>
-</form>
-</body>
 
-</body>
+
+    <span class="v60_12">Integrante 5</span>
+    <span class="v60_13">Integrante 3</span>
+    <div class=" recuadro_comite"></div>
+    <span class="v60_21">Asignar integrante de comité</span>
+    <form action="" method="post" novalidate>
+      {{ form.hidden_tag() }}
+    <select class="nombre_comite" name="lenguajes" id="lang">
+      <option value="javascript">Nombre de comite </option>
+      <option value="php">PHP</option>
+      <option value="java">Java</option>
+    </select>
+
+    <div class="v60_23"></div>
+    <div class="v60_24"></div>
+    <div class="v60_25"></div>
+
+    <button class="Agregar_asignar">Agregar +</button>
+
+    <span class="v60_30">Integrante 4</span>
+
+    <form method="get" action="/search">
+      <input class="buscar" type="search" name="search-text" placeholder=" Buscar Integrante">
+
+      <span class="v60_38">Integrante 1</span>
+      <span class="v60_39">Integrante 2</span>
+      <button class="Regresar_asignar"> Regresar </button>
+      <i class="fa-solid fa-caret-left"></i>
+
+  </div>
+  </form>
+</main>
 {% endblock %}

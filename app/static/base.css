@@ -14,6 +14,8 @@
 @import url(asignar_comite.css);
 @import url(sesion_comite.css);
 @import url(tarea.css);
+@import url(Direccion.css);
+@import url(address_form.css);
 
 :root {
     --primary-color: #231f20;
