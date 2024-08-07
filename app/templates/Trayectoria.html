@@ -26,64 +26,19 @@
               {% endfor %}
             </div>  
             <div>
-              {{ form.birth_date.label }}
-              {{ form.birth_date }}<br>
-              {% for error in form.birth_date.errors %}
+              {{ form.dateinicio.label }}
+              {{ form.dateinico }}<br>
+              {% for error in form.dateinicio.errors %}
               <span style="color: red;">{{ error }}</span>
               {% endfor %}
             </div>
-          <div class="botons">
-          <label><input type="text" name="Rol" placeholder="Rol*" /></label>
-
-          <label
-            ><input
-              type="text"
-              name="Lugar de Adscripcion"
-              placeholder="Lugar de Adscripcion*"
-          /></label>
-          </div>
-          <div class="botons">
-          <label
-            ><input
-              type="text"
-              name="Fecha de Inicio(rol)"
-              placeholder="Fecha Inicio(rol)*"
-          /></label>
-
-          <label
-            ><input
-              type="text"
-              name="Fecha Final(rol)"
-              placeholder="Fecha Final(rol)"
-          /></label>
-          </div>
-          <div class="botons">
-          <label
-            ><input type="text" name="Fue apoyado" placeholder="Fue apoyado"
-          /></label>
-          <label
-            ><input type="text" name="Nombre apoyo" placeholder="Nombre apoyo"
-          /></label>
-          </div>  
-          
-          <form>
-            <select>
-              <option disable select="">Seleccione una opcion</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-            {{ form.submit() }}
-          </form>
           
           <div class="botons">
               <a class="bottom" href="https://www.google.com.mx" target="blank">Atras</a>
                 <a class="bottom" href="https://www.google.com.mx" target="blank">Siguiente</a>
             </div>
         </div>
-      </form>
+        </form>
       </div>
 
      

@@ -99,9 +99,7 @@ def create_app():
             name = form.name.data
             email = form.email.data
             password = form.password.data
-            role = form.role.data
-            birth_date = form.birth_date.data
-            print(name,password,email,role,birth_date)
+            print(name,password,email)
             next = request.args.get('next', None)
             if next:
                 return redirect(next)
@@ -173,11 +171,13 @@ def create_app():
         form = trayectoriaForm()
         if form.validate_on_submit():
             name = form.name.data
-            print("hola")
+            dateinicio= form.dateinicio.data
+            role=form.role.data 
+            print(name,dateinicio,role)
             next = request.args.get('next', None)
             if next:
                 return redirect(next)
-            return redirect(url_for('login'))
+            return redirect(url_for('Trayectoria'))
         return render_template("Trayectoria.html", form=form)
     
     @app.route("/Direccion/", methods=["GET","POST"])
@@ -185,6 +185,7 @@ def create_app():
         form = trayectoriaForm()
         if form.validate_on_submit():
             name = form.name.data
+            
             print("Pierce")
             next = request.args.get('next', None)
             if next:

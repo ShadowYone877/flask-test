@@ -114,8 +114,6 @@ header {
     flex:content;
     flex-direction: center;
     justify-content: center;
-    
-    
     text-align: center;
     
   }
@@ -130,6 +128,7 @@ header {
     flex-direction: column;
     width: 900px;
     height: 600px;
+    
     
   }
 

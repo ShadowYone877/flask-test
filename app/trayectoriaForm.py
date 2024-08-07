@@ -4,7 +4,9 @@ from wtforms.validators import DataRequired, Email, Length
 
 
 class trayectoriaForm(FlaskForm):
-    name = StringField('Nombre', validators=[DataRequired(), Length(max=124)],render_kw={"placeholder": "Ingresa tu nombre"})
     role = SelectField('Rol', choices=[('admin', 'Administrador'), ('user', 'Usuario')], validators=[DataRequired()])
-    birth_date = DateField('Fecha de Nacimiento', format='%Y-%m-%d', validators=[DataRequired()])
+    name = StringField('nombre', validators=[DataRequired()])
+    dateinicio = DateField('Fecha inicio', validators=[DataRequired()])
+    
+    
     submit = SubmitField('Regis')
