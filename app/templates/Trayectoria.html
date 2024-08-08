@@ -1,46 +1,49 @@
-
 {% extends "base_template.html" %}
 {% block title %}Trayectoria{% endblock %}
 {% block header %}
-<header>
-    {% include "header.html" %}
-</header>
-{% endblock %}
-{% block content %}
-<main>
-      <div class="Contenedor">
+<div>
+  <header>
+      {% include "header.html" %}
+  </header>
+</div>
+<body >
+  {% endblock %}
+  {% block content %}
+  <br>
+  <main class="main-container">
+      <div class="contenedor">
         <form method="post" novalidate>
           {{ form.hidden_tag() }}
-        <div class="columna">
+          
           <h2 class="texth2">Trayectoria</h2>
+          <br>
+            <div class="form-group">
             {{ form.name.label }}
-            {{ form.name(size=100) }}<br>
+            {{ form.name(size=30) }}<br>
             {% for error in form.name.errors %}
             <span style="color: red;">{{ error }}</span>
             {% endfor %}
-            <div>
+            </div>
+            <div class="form-group">
               {{ form.role.label }}
               {{ form.role }}<br>
               {% for error in form.role.errors %}
               <span style="color: red;">{{ error }}</span>
               {% endfor %}
             </div>  
-            <div>
+            <div class="form-group">
               {{ form.dateinicio.label }}
-              {{ form.dateinico }}<br>
+              {{ form.dateinicio(aria_label="Fecha de inicio") }}<br>
               {% for error in form.dateinicio.errors %}
-              <span style="color: red;">{{ error }}</span>
+              <span class="error">{{ error }}</span>
               {% endfor %}
             </div>
-          
-          <div class="botons">
+            <div class="botons">
               <a class="bottom" href="https://www.google.com.mx" target="blank">Atras</a>
-                <a class="bottom" href="https://www.google.com.mx" target="blank">Siguiente</a>
+              <a class="bottom" href="https://www.google.com.mx" target="blank">Siguiente</a>
             </div>
-        </div>
         </form>
       </div>
-
-     
-    </main>
-    {% endblock %}
+  </main>
+  {% endblock %}
+</body>
