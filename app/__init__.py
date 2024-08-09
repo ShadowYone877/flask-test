@@ -128,8 +128,8 @@ def create_app():
 
     @app.route("/tarea", methods=["GET", "POST"])
     def tarea():
-<<<<<<< HEAD
         return render_template("tarea.html") 
+
     
     @app.route("/address_form/", methods=["GET", "POST"])
     def address_form():
@@ -162,9 +162,7 @@ def create_app():
                 return redirect(next)
             return redirect(url_for('evento2'))
         return render_template("evento2.html", form=form)
-
-=======
-        return render_template("tarea.html")
+    return render_template("tarea.html")
     
     @app.route("/Trayectoria/", methods=["GET","POST"])
     def Trayectoria():
@@ -190,9 +188,9 @@ def create_app():
             next = request.args.get('next', None)
             if next:
                 return redirect(next)
-            return redirect(url_for('login'))
+                return redirect(url_for('login'))
         return render_template("Direccion.html", form=form)
->>>>>>> 923b763 (implementacion de jinja en la vista trayectoria)
+
 
     if __name__ == '__main__':
         app.run(debug=True)
