@@ -3,9 +3,12 @@
 /* Contenedor principal centrado */
 .main-container {
   display: flex;
+  
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 800px;
+  width: 800px;
+  
 }
 
 /* Caja del formulario */
