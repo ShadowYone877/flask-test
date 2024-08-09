@@ -6,6 +6,7 @@ from .event2Form import event2Form
 from .tablerocomiteForm import tablerocomiteForm
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField, BooleanField, SelectField
+from .trayectoriaForm import trayectoriaForm
 
 def create_app():
     
@@ -98,7 +99,9 @@ def create_app():
             name = form.name.data
             email = form.email.data
             password = form.password.data
-            print(name,password,email)
+            role = form.role.data
+            birth_date = form.birth_date.data
+            print(name,password,email,role,birth_date)
             next = request.args.get('next', None)
             if next:
                 return redirect(next)
@@ -127,6 +130,7 @@ def create_app():
 
     @app.route("/tarea", methods=["GET", "POST"])
     def tarea():
+<<<<<<< HEAD
         return render_template("tarea.html") 
     
     @app.route("/address_form/", methods=["GET", "POST"])
@@ -161,6 +165,33 @@ def create_app():
             return redirect(url_for('evento2'))
         return render_template("evento2.html", form=form)
 
+=======
+        return render_template("tarea.html")
+    
+    @app.route("/Trayectoria/", methods=["GET","POST"])
+    def Trayectoria():
+        form = trayectoriaForm()
+        if form.validate_on_submit():
+            name = form.name.data
+            print("hola")
+            next = request.args.get('next', None)
+            if next:
+                return redirect(next)
+            return redirect(url_for('login'))
+        return render_template("Trayectoria.html", form=form)
+    
+    @app.route("/Direccion/", methods=["GET","POST"])
+    def Direccion():
+        form = trayectoriaForm()
+        if form.validate_on_submit():
+            name = form.name.data
+            print("Pierce")
+            next = request.args.get('next', None)
+            if next:
+                return redirect(next)
+            return redirect(url_for('login'))
+        return render_template("Direccion.html", form=form)
+>>>>>>> 923b763 (implementacion de jinja en la vista trayectoria)
 
     if __name__ == '__main__':
         app.run(debug=True)
